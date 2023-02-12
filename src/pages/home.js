@@ -2,14 +2,14 @@
 import React from 'react';
 import BootstrapCarousel from "../components/BootstrapCarousel";
 import IntroSection from '../components/IntroSection';
-import MissionSec from '../components/MissionSec';
+import MissonSec from '../components/MissonSec';
 import Testimonials from '../components/Testimonials';
 const Home = () => {
     return (
         <div>
             <BootstrapCarousel/>
 <IntroSection/>
-           <MissionSec/>
+           <MissonSec/>
            <Testimonials/>
         </div>
     );

@@ -1,7 +1,5 @@
 import {NavLink} from 'react-router-dom'
-import {NavLink} from 'react-router-dom'
 
-import {useState} from 'react'
 import {useState} from 'react'
 
 const Navbar = () => {
@@ -24,13 +22,7 @@ const Navbar = () => {
           </span>
                     Logo
                 </div>
-                    Logo
-                </div>
 
-                <div onClick={() => setOpen(!open)}
-                     className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-                    <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
-                </div>
                 <div onClick={() => setOpen(!open)}
                      className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                     <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
@@ -41,7 +33,7 @@ const Navbar = () => {
                         Links.map((link) => (
                             <li key={link.name} className='md:ml-8 text-xl'>
                                 <NavLink to={link.link}
-                                         className='text-gray-800 hover:text-teal-600 duration-500'>{link.name}</NavLink>
+                                         className='text-gray-800 hover:text-red-600 duration-500'>{link.name}</NavLink>
                             </li>
                         ))
                     }

@@ -16,7 +16,7 @@ const Testimonials = () => {
             className="absolute top-3 right-8 scale-125 md:top-7 md:right-24 md:scale-150"
           />
         
-          <div className="flex z-10 space-x-4">
+          <div className="flex z-10 space-x-4 text-black">
             <img
               src="https://images.pexels.com/photos/4762744/pexels-photo-4762744.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt=""
@@ -28,11 +28,11 @@ const Testimonials = () => {
             </div>
           </div>
           
-          <p className="relative z-10 mt-6 text-xl">
+          <p className="relative z-10 mt-6 text-xl text-black">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis placeat. Modi, ipsa!
           </p>
          
-          <p className="mt-6 opacity-50 line-clamp-6">
+          <p className="mt-6 opacity-50 line-clamp-6 text-black">
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum. Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio quaerat impedit. Perferendis, maxime omnis."
           </p>
         </div>

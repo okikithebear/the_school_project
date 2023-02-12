@@ -6,12 +6,18 @@ import Testimonials from '../components/Testimonials';
 
 const Home = () => {
     return (
-        <div>
-            <BootstrapCarousel/>
-            <IntroSection/>
-            <MissionSec/>
-            <Testimonials/>
-        </div>
+        <>
+            <div>
+                <BootstrapCarousel/>
+            </div>
+            <section className={'mid-section flex flex-col'}>
+                <IntroSection/>
+                <MissionSec/>
+            </section>
+            <section className={'testimonials flex flex-col bg-gray-200'}>
+                <Testimonials/>
+            </section>
+        </>
     );
 };
 export default Home;

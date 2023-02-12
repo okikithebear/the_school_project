@@ -18,11 +18,11 @@ const Footer = () => {
             type="text"
             placeholder="Enter Your Email here"
             className="text-gray-800
-           sm:w-72 w-full sm:mr-5 mr-1  py-2.5 rounded px-2 focus:outline-none"
+           sm:w-72 w-full sm:mr-5 mr-1 h-10 rounded px-2 focus:outline-none"
           />
           <button
-            className="bg-green-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-mulish
-           rounded-md text-white md:w-auto w-full"
+            className="bg-green-400 hover:bg-green-500 duration-300 h-10 px-5 font-mulish
+           rounded-md text-white md:w-auto w-1/2 md:mt-0 mt-2 "
           >
             Subscribe
           </button>

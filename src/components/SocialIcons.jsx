@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialIcons = ({ Icons }) => {
   return (
-    <div className="text-teal-500 justify-center">
+    <div className="text-greenVariant justify-center">
       {Icons.map((icon) => (
         <span
           key={icon.name}

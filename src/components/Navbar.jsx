@@ -8,13 +8,12 @@ const Navbar = () => {
         {name: "About Us", link: "/about"},
         {name: "Admissions", link: "/admissions"},
         {name: "School Life", link: "/"},
-        {name: "Portal", link: "/"},
     ];
     let [open, setOpen] = useState(false);
     return (
 
-            <nav className='md:flex sticky top-0 z-20 overflow-hidden items-center justify-between bg-darkBlue p-4 font-mulish text-white'>
-                <div className='font-semibold text-xl cursor-pointer'>
+            <nav className='md:flex sticky top-0 z-20 overflow-hidden items-center justify-between bg-darkBlue1 p-4 font-mulish text-white'>
+                <div className='font-semibold text-xl cursor-pointer text-greenVariant'>
                     Logo
                 </div>
 

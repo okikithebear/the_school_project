@@ -5,7 +5,7 @@ import { Icons } from "./Menus";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkBlue text-white pt-24 md:pt-12 font-mulish">
+    <footer className="bg-darkBlue1 text-white pt-24 md:pt-12 font-mulish">
       <div className="md:flex align-middle justify-between bg-[#ffffff19] p-4" >
         <h1
           className="lg:text-3xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
@@ -21,7 +21,7 @@ const Footer = () => {
            sm:w-72 w-full sm:mr-5 mr-1 h-10 rounded px-2 focus:outline-none"
           />
           <button
-            className="bg-green-400 hover:bg-green-500 duration-300 h-10 px-5 font-mulish
+            className="bg-greenVariant hover:bg-teal-500 duration-300 h-10 px-5 font-mulish
            rounded-md text-white md:w-auto w-1/2 md:mt-0 mt-2 "
           >
             Subscribe

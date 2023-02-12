@@ -13,7 +13,7 @@ module.exports = {
         accentCyan: 'hsl(176, 68%, 64%)',
         accentBlue: 'hsl(198, 60%, 50%)',
         lightRed: 'hsl(0, 100%, 63%)',
-        greenVariant:'#70BF4B'
+        greenVariant:'#91BF8A'
       },
 
     fontFamily:{

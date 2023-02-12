@@ -8,7 +8,7 @@ const Testimonials = () => {
       
       <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
       
-        <div className="relative p-10 rounded-xl bg-green-400 md:col-span-2">
+        <div className="relative p-10 rounded-xl bg-greenVariant md:col-span-2">
      
           <img
             src="images/bg-pattern-quotation.svg"
@@ -36,7 +36,7 @@ const Testimonials = () => {
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum. Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio quaerat impedit. Perferendis, maxime omnis."
           </p>
         </div>
-            <div className="p-10 rounded-xl bg-darkBlue">
+            <div className="p-10 rounded-xl bg-darkBlue1">
               
               <div className="flex space-x-4">
                 <img
@@ -60,7 +60,7 @@ const Testimonials = () => {
             </div>
             
             
-            <div className="hidden p-10 rounded-xl text-slate-800 bg-green-400 md:block md:row-span-2">
+            <div className="hidden p-10 rounded-xl text-slate-800 bg-greenVariant md:block md:row-span-2">
               
               <div className="flex space-x-4">
                 <img
@@ -83,7 +83,7 @@ const Testimonials = () => {
               </p>
             </div>
 
-<div className="p-10 rounded-xl text-white bg-darkBlue">
+<div className="p-10 rounded-xl text-white bg-darkBlue1">
  
   <div className="flex space-x-4">
     <img
@@ -105,7 +105,7 @@ const Testimonials = () => {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam porro, ex doloribus optio nemo"
   </p>
 </div>
- <div className="p-10 rounded-xl bg-darkBlue text-white md:col-span-2">
+ <div className="p-10 rounded-xl bg-darkBlue1 text-white md:col-span-2">
 
   <div className="flex space-x-4">
     <img

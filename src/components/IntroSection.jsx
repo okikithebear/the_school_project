@@ -31,7 +31,7 @@ const IntroSection = () => {
           <img
             src="https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
-            className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
+            className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible rounded-2xl"
           />
         </div>
       </div>

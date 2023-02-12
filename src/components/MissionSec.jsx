@@ -18,7 +18,6 @@ const MissonSec = () => {
                 To educate all students to the highest levels of academic achievement, to enable them to reach and expand their potential, and to prepare them to become productive, responsible, ethical, creative and compassionate members of society.
             </p>
         </div>
-
     </div>
   )
 }

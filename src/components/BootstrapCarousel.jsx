@@ -3,11 +3,12 @@ import {Carousel} from 'react-bootstrap';
 
 function BootstrapCarousel() {
   return (
-    <Carousel>
+
+    <Carousel className='relative'>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          src="https://images.pexels.com/photos/8617518/pexels-photo-8617518.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +19,9 @@ function BootstrapCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+
+          src="https://images.pexels.com/photos/8617544/pexels-photo-8617544.jpeg?auto=compress&cs=tinysrgb&w=600"
+
           alt="Second slide"
         />
 
@@ -30,7 +33,8 @@ function BootstrapCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src="https://images.pexels.com/photos/8617505/pexels-photo-8617505.jpeg?auto=compress&cs=tinysrgb&w=600"
+
           alt="Third slide"
         />
 

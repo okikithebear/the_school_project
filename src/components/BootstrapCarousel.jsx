@@ -1,14 +1,17 @@
 import React from "react";
 import {Carousel} from 'react-bootstrap';
+import SchoolPic1 from '../Images/SchoolPic1.jpg'
+import SchoolPic2 from '../Images/SchoolPic2.jpg'
+import SchoolPic3 from '../Images/SchoolPic3.jpg'
 
 function  BootstrapCarousel() {
   return (
 
-    <Carousel className='relative'>
-      <Carousel.Item>
+    <Carousel className='carousel-inner'>
+      <Carousel.Item className="carousel-item">
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/8617518/pexels-photo-8617518.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src={SchoolPic1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -16,11 +19,11 @@ function  BootstrapCarousel() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className="carousel-item">
         <img
           className="d-block w-100"
 
-          src="https://images.pexels.com/photos/8617544/pexels-photo-8617544.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src={SchoolPic2}
 
           alt="Second slide"
         />
@@ -30,10 +33,10 @@ function  BootstrapCarousel() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className="carousel-item">
         <img
           className="d-block w-100"
-          src="https://images.pexels.com/photos/8617505/pexels-photo-8617505.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src={SchoolPic3}
 
           alt="Third slide"
         />

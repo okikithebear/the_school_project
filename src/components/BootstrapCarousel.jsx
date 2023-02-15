@@ -10,7 +10,7 @@ function  BootstrapCarousel() {
     <Carousel className='carousel-inner'>
       <Carousel.Item className="carousel-item">
         <img
-          className="d-block w-100"
+          className="d-block w-100 object-cover"
           src={SchoolPic1}
           alt="First slide"
         />
@@ -21,7 +21,7 @@ function  BootstrapCarousel() {
       </Carousel.Item>
       <Carousel.Item className="carousel-item">
         <img
-          className="d-block w-100"
+          className="d-block w-100 object-cover"
 
           src={SchoolPic2}
 
@@ -35,7 +35,7 @@ function  BootstrapCarousel() {
       </Carousel.Item>
       <Carousel.Item className="carousel-item">
         <img
-          className="d-block w-100"
+          className="d-block w-100 object-cover"
           src={SchoolPic3}
 
           alt="Third slide"

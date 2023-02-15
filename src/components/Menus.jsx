@@ -9,7 +9,7 @@ export const CONTACTS = [
     { name: "Health Care", link: "#" },
     { name: "Boarding", link: "#" },
     { name: "Scholarships", link: "#" },
-    { name: "About Us", link: "#" },
+    { name: "About Us", link: "/about" },
     { name: "Prospectus Request", link: "#" },
     { name: "Alumni", link: "#" },
   ];

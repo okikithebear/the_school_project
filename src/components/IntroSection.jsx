@@ -20,7 +20,7 @@ const IntroSection = () => {
                 >
                     <a
                         href="#"
-                        className="p-3 text-sm font-semibold text-white bg-greenVariant hover:bg-greenVariant2 rounded-xl shadow-sm md:text-base"
+                        className="p-3 text-sm font-semibold text-white bg-darkBlue1 hover:bg-darkBlue rounded-xl shadow-sm md:text-base"
                     >Apply Here </a>
                 </div>
             </div>

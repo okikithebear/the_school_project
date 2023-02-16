@@ -3,12 +3,12 @@ import React from 'react'
 const Testimonials = () => {
     return (
         <div className="px-24 my-4">
-           <div className="heading flex justify-center text-5xl font-bold font-mulish text-black py-8">
+           <div className="heading flex justify-center text-5xl font-bold font-mulish text-white py-8">
             <span className={'text-center'}>Testimonials</span>
            </div>
             <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
 
-                <div className="relative p-10 rounded-xl bg-greenVariant md:col-span-2">
+                <div className="relative p-10 rounded-xl bg-greenVariant2 md:col-span-2">
 
                     <img
                         src="images/bg-pattern-quotation.svg"
@@ -16,7 +16,7 @@ const Testimonials = () => {
                         className="absolute top-3 right-8 scale-125 md:top-7 md:right-24 md:scale-150"
                     />
 
-                    <div className="flex z-10 space-x-4 text-black">
+                    <div className="flex z-10 space-x-4 text-white">
                         <img
                             src="https://images.pexels.com/photos/4762744/pexels-photo-4762744.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt=""
@@ -28,12 +28,12 @@ const Testimonials = () => {
                         </div>
                     </div>
 
-                    <p className="relative z-10 mt-6 text-xl text-black">
+                    <p className="relative z-10 mt-6 text-xl text-white">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                         placeat. Modi, ipsa!
                     </p>
 
-                    <p className="mt-6 opacity-50 line-clamp-6 text-black">
+                    <p className="mt-6 opacity-50 line-clamp-6 text-white">
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis."
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 </div>
 
 
-                <div className="hidden p-10 rounded-xl text-slate-800 bg-greenVariant md:block md:row-span-2">
+                <div className="hidden p-10 rounded-xl text-white bg-greenVariant2 md:block md:row-span-2">
 
                     <div className="flex space-x-4">
                         <img

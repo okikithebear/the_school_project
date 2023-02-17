@@ -21,7 +21,7 @@ const Footer = () => {
            sm:w-72 w-full sm:mr-5 mr-1 h-10 rounded px-2 focus:outline-none"
           />
           <button
-            className="bg-greenVariant hover:bg-teal-500 duration-300 h-10 px-5 font-mulish
+            className="bg-greenVariant2 hover:bg-greenVariant duration-300 h-10 px-5 font-mulish
            rounded-md text-white md:w-auto w-1/2 md:mt-0 mt-2 "
           >
             Subscribe

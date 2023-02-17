@@ -16,11 +16,13 @@ const IntroSection = () => {
                     child’s social/emotional, physical and cognitive development.
                 </p>
                 <div
-                    className="flex items-center justify-center w-full space-x-4 "
+                    className="flex items-center justify-center w-full space-x-4 text-white"
                 >
                     <a
                         href="#"
-                        className="p-3 text-sm font-semibold text-white bg-darkBlue1 hover:bg-darkBlue rounded-xl shadow-sm md:text-base"
+
+                        className="p-3 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-greenVariant rounded-xl shadow-sm md:text-base"
+                        
                     >Apply Here </a>
                 </div>
             </div>

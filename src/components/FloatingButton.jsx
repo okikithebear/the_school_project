@@ -5,7 +5,7 @@ const FloatingButton = () => {
     const [showMyModal, setShowMyModal] = useState(false)
     const handleOnClose = () => setShowMyModal(false)
     return (
-<>
+
         <div className="flex flex-row fixed bottom-12 right-6 z-10 cursor-pointer" onClick={() => setShowMyModal(true)}>
             <span className="flex text-darkgreenVariant bg-darkBlue rounded-full font-mulish font-semibold py-2 px-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -18,8 +18,7 @@ const FloatingButton = () => {
             <MyModal onClose={handleOnClose} visible={showMyModal}/>
 
         </div>
-</>
-)
+    )
 }
 
 export default FloatingButton

@@ -13,7 +13,7 @@ const About = () => {
             {/*</section>*/}
             <section className='section  bg-light border-bottom'>
                 <div className='container'>
-                    <h5 className='main-heading'>School Name</h5>
+                    <h5 className='main-heading'>Light Workers Academy</h5>
                     <div className='underline'></div>
                     <p>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
@@ -27,7 +27,7 @@ const About = () => {
             </div>
             <section className='section  bg-light border-bottom'>
                 <div className='container'>
-                    <h5 className='main-heading'>Why School Name?</h5>
+                    <h5 className='main-heading'>Why Choose Light Workers Academy?</h5>
                     <div className='underline'></div>
                     <p>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.

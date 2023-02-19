@@ -5,9 +5,9 @@ const IntroSection = () => {
         <div className="flex flex-col md:flex-row lg:mb-0 mt-8 md:mt-24 font-mulish">
             <div className="basis-1/2 space-y-10">
                 <h1
-                    className="text-5xl font-semibold text-center lg:text-left"
+                    className="text-5xl font-semibold text-center text-darkBlue"
                 >
-                    We are Schoolname
+                    Light Workers Academy
                 </h1>
                 <p
                     className="max-w-md mx-auto text-lg text-center text-slate-500  lg:text-left lg:mt-0 lg:mx-0"
@@ -20,9 +20,7 @@ const IntroSection = () => {
                 >
                     <a
                         href="#"
-
-                        className="p-3 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-greenVariant rounded-xl shadow-sm md:text-base"
-                        
+                        className="p-3 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-darkgreenVariant rounded-xl shadow-sm md:text-base"
                     >Apply Here </a>
                 </div>
             </div>

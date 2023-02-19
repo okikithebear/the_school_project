@@ -1,5 +1,5 @@
 export const CONTACTS = [
-    { name: "ADRESS", link: "#" },
+    { name: "ADDRESS", link: "#" },
     { name: "TELEPHONE", link: "#" },
     { name: "MAIL", link: "#" },
   ];

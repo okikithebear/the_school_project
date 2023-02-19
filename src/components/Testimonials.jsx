@@ -8,7 +8,7 @@ const Testimonials = () => {
            </div>
             <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
 
-                <div className="relative p-10 rounded-xl bg-greenVariant2 md:col-span-2">
+                <div className="relative p-10 rounded-xl bg-darkgreenVariant md:col-span-2">
 
                     <img
                         src="images/bg-pattern-quotation.svg"
@@ -16,7 +16,7 @@ const Testimonials = () => {
                         className="absolute top-3 right-8 scale-125 md:top-7 md:right-24 md:scale-150"
                     />
 
-                    <div className="flex z-10 space-x-4 text-white">
+                    <div className="flex space-x-4 text-white">
                         <img
                             src="https://images.pexels.com/photos/4762744/pexels-photo-4762744.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt=""
@@ -28,7 +28,7 @@ const Testimonials = () => {
                         </div>
                     </div>
 
-                    <p className="relative z-10 mt-6 text-xl text-white">
+                    <p className="relative  mt-6 text-xl text-white">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                         placeat. Modi, ipsa!
                     </p>
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 </div>
 
 
-                <div className="hidden p-10 rounded-xl text-white bg-greenVariant2 md:block md:row-span-2">
+                <div className="hidden p-10 rounded-xl text-white bg-darkgreenVariant md:block md:row-span-2">
 
                     <div className="flex space-x-4">
                         <img

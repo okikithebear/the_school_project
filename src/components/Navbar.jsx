@@ -36,7 +36,7 @@ const Navbar = () => {
                         Links.map((link) => (
                             <li key={link.name} className='md:ml-8 text-xl'>
                                 <NavLink to={link.link}
-                                         className='hover:text-greenVariant2'>{link.name}</NavLink>
+                                         className='hover:text-darkgreenVariant'>{link.name}</NavLink>
                             </li>
                         ))
                     }
@@ -45,7 +45,7 @@ const Navbar = () => {
             </nav>
             {
                 location.pathname !== '/' &&
-                <section className='py-4 bg-greenVariant2'>
+                <section className='py-4 bg-darkgreenVariant'>
 
                     <div className='px-12 my-auto'>
                         <h4 className="text-darkBlue text-3xl font-extrabold font-mulish">{currentLocation[location.pathname]}</h4>

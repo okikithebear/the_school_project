@@ -1,24 +1,25 @@
-import React , {useState} from 'react'
+import React, {useState} from 'react'
 import MyModal from './MyModal'
 
 const FloatingButton = () => {
     const [showMyModal, setShowMyModal] = useState(false)
     const handleOnClose = () => setShowMyModal(false)
-   return (
+    return (
+<>
+        <div className="flex flex-row fixed bottom-12 right-6 z-10 cursor-pointer" onClick={() => setShowMyModal(true)}>
+            <span className="flex text-darkgreenVariant bg-darkBlue rounded-full font-mulish font-semibold py-2 px-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path fillRule="evenodd" clipRule="evenodd"
+                          d="M9.7625 2.5H20.2388C24.1 2.5 26.25 4.725 26.25 8.5375V21.45C26.25 25.325 24.1 27.5 20.2388 27.5H9.7625C5.9625 27.5 3.75 25.325 3.75 21.45V8.5375C3.75 4.725 5.9625 2.5 9.7625 2.5ZM10.1 8.325V8.3125H13.8363C14.375 8.3125 14.8125 8.75 14.8125 9.28625C14.8125 9.8375 14.375 10.275 13.8363 10.275H10.1C9.56125 10.275 9.125 9.8375 9.125 9.3C9.125 8.7625 9.56125 8.325 10.1 8.325ZM10.1 15.925H19.9C20.4375 15.925 20.875 15.4875 20.875 14.95C20.875 14.4125 20.4375 13.9737 19.9 13.9737H10.1C9.56125 13.9737 9.125 14.4125 9.125 14.95C9.125 15.4875 9.56125 15.925 10.1 15.925ZM10.1 21.6375H19.9C20.3988 21.5875 20.775 21.1613 20.775 20.6625C20.775 20.15 20.3988 19.725 19.9 19.675H10.1C9.725 19.6375 9.3625 19.8125 9.1625 20.1375C8.9625 20.45 8.9625 20.8625 9.1625 21.1875C9.3625 21.5 9.725 21.6875 10.1 21.6375Z"
+                          fill="#70BF4B"/>
+                </svg>
+                <span className="pt-0.5">Apply Here</span>
+            </span>
+            <MyModal onClose={handleOnClose} visible={showMyModal}/>
 
-        <div class="relative">
-          <button onClick={() => setShowMyModal(true)}
-                  class="absolute top-0 right-0 text-white p-2 z-60 bg-red-500 rounded-full m-2 hover:bg-red-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
-            <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6 inline-block">
-              <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
-                                      C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
-                                      C15.952,9,16,9.447,16,10z" />
-            </svg>
-          </button>
-
-          <MyModal onClose={handleOnClose} visible={showMyModal}/>
         </div>
-  )
+</>
+)
 }
 
 export default FloatingButton

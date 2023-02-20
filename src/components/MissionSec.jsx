@@ -7,7 +7,7 @@ const MissonSec = () => {
        <img
          src="https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=600"
          alt=""
-         className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible rounded-2xl"
+         className="relative  lg:top-24 xl:top-0 overflow-x-visible rounded-2xl"
        />
      </div>
      <div className="basis-1/2 space-y-10 mt-16 lg:mt-16 lg:w-1/2 flex-wrap">

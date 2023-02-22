@@ -1,5 +1,5 @@
 import React from 'react';
-import MissonSec from '../components/MissionSec';
+import Teacher1 from '../Images/Teacher1.jpg'
 
 const About = () => {
     return (
@@ -125,6 +125,45 @@ const About = () => {
                         quaerat impedit. Perferendis, maxime omnis." 
                         </p>
                     </div>
+
+                <div className='font-mulish bg-darkBlue text-white mt-3'>
+                   <div className='text-center py-10'>
+                    <h5 className='text-greenVariant'>Our Instructors</h5>
+                    <h1 className='text-2xl w-96 mx-auto leading-normal font-bold'>Read What Some Of Our Instructors Have To Say</h1>
+                  <div className='flex max-w-5xl mx-auto gap-8 group'>
+                    <div className='bg-white/10 cursor-pointer duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 p-8 rounded-xl mix-blend-luminosity'>
+                      <img className='rounded-full border w-20 h-20 mx-auto' src={Teacher1} alt=''/>
+                    <h4 className='uppercase text-xl font-bold'>John Doe</h4>
+                    <p className='text-sm leading-7 my-3 font-light opacity-50'>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
+                        Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
+                        quaerat impedit. Perferendis, maxime omnis."</p>
+                        <button className='bg-darkgreenVariant py-2.5 px-8 rounded-full'>
+                            Get in touch
+                        </button>
+                    </div>
+                    <div className='bg-white/10 cursor-pointer duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 p-8 rounded-xl mix-blend-luminosity'>
+                      <img className='rounded-full border w-20 h-20 mx-auto' src='https://images.pexels.com/photos/7092612/pexels-photo-7092612.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt=''/>
+                    <h4 className='uppercase text-xl font-bold'>John Doe</h4>
+                    <p className='text-sm leading-7 my-3 font-light opacity-50'>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
+                        Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
+                        quaerat impedit. Perferendis, maxime omnis."</p>
+                        <button className='bg-darkgreenVariant py-2.5 px-8 rounded-full'>
+                            Get in touch
+                        </button>
+                    </div>
+                    <div className='bg-white/10 cursor-pointer duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 p-8 rounded-xl mix-blend-luminosity'>
+                      <img className='rounded-full border w-20 h-20 mx-auto' src='https://images.pexels.com/photos/2861798/pexels-photo-2861798.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt=''/>
+                    <h4 className='uppercase text-xl font-bold'>John Doe</h4>
+                    <p className='text-sm leading-7 my-3 font-light opacity-50'>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
+                        Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
+                        quaerat impedit. Perferendis, maxime omnis."</p>
+                        <button className='bg-darkgreenVariant py-2.5 px-8 rounded-full'>
+                            Get in touch
+                        </button>
+                    </div>
+                  </div>
+                   </div>
+                </div>
                 </section>
         </div>
     );

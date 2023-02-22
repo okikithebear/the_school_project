@@ -70,7 +70,7 @@ const About = () => {
                     </div>
                     <div className='col-md-4 text-justify font-mulish  text-darkgreenVariant'>
                     <h6 className='font-semibold text-center'>Our Vision</h6>
-                        <p className='text-justify'>
+                        <p className='text-justify  pb-2'>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis."  
@@ -78,7 +78,7 @@ const About = () => {
                     </div>
                     <div className='col-md-4 text-justify font-mulish text-darkgreenVariant'>
                     <h6 className='font-semibold text-center'>Our Mission</h6>
-                        <p className='text-justify'>
+                        <p className='text-justify pb-2'>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis."  
@@ -86,7 +86,7 @@ const About = () => {
                     </div>
                     <div className='col-md-4  font-mulish text-darkgreenVariant'>
                         <h6 className='font-semibold text-center'>Our Values</h6>
-                        <p className='text-justify'>
+                        <p className='text-justify pb-2'>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis."  

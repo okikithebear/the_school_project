@@ -39,7 +39,7 @@ const About = () => {
       >
         <img src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
         <div
-          class="top-24 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
+          className="top-24 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
         >
           <h2
             className="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-darkBlue1 uppercase md:text-5xl md:mt-0 md:text-left"

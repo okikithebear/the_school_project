@@ -64,7 +64,7 @@ const About = () => {
         <section className='section-info bg-c-light border-top'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-12 mb-4 text-center text-darkgreenVariant'>
+                    <div className='col-md-12 mb-4 mt-2 text-center text-darkgreenVariant'>
                     <h3 className='main-heading'>Vision, Mission and Values</h3>
                     <div className='underline mx-auto'></div>
                     </div>
@@ -115,7 +115,7 @@ const About = () => {
             </p>
         </div>
     </div>
-    <div className='container col-md-4 py-15 px-5 text-justify font-mulish  text-darkBlue1'>
+    <div className='container col-md-4   text-justify font-mulish  text-darkBlue1'>
                     <h3 className='font-semibold text-2xl'>Babajide David and Lekan Aina ~</h3>
                         <p>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.

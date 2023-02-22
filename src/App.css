@@ -49,7 +49,7 @@
 
 .underline {
   height: 04px;
-  width: 4rem;
+  width: 7rem;
   background-color: #70bf4b;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -80,4 +80,8 @@
     height: 460px;
     width: 100%;
   }
+}
+
+.bg-c-light {
+  background-color: #040926;
 }

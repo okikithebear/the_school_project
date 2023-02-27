@@ -8,6 +8,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import FloatingButton from "./components/FloatingButton";
 import Founder from "./pages/founder";
+
 import MyModal from "./components/MyModal";
 import {useState} from "react";
 
@@ -24,7 +25,9 @@ const App = () => {
                 <Navbar/>
                 <FloatingButton modalActions={{handleModal,showModal}}/>
                 <Routes>
+
                     <Route path='/' element={<Home modalActions={{handleModal,showModal}}/>}/>
+
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
                 </Routes>

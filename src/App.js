@@ -18,9 +18,6 @@ const App = () => {
     const handleModal = (showModal) => {
         setShowModal(!showModal)
     }
-    useEffect(()=>{
-        console.log(showModal)
-    })
     return (
         <>
             <BrowserRouter>

@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react'
-import MyModal from './MyModal'
+import React from 'react'
 
 const FloatingButton = ({modalActions}) => {
     return (
@@ -13,8 +12,6 @@ const FloatingButton = ({modalActions}) => {
                 </svg>
                 <span className="pt-0.5">Apply Here</span>
             </span>
-            {/*<MyModal onClose={handleOnClose} visible={showMyModal}/>*/}
-
         </div>
     )
 }

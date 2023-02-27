@@ -93,14 +93,6 @@ const About = () => {
                             not enough. We have to build new pillars of development. Education, science and technology,
                             innovation and entrepreneurship, and more equality." Sebastian Pinera
                         </p>
-                        {/* <div
-                    className="flex items-center justify-center w-full space-x-4 text-white"
-                >
-                    <a
-                        href="#"
-                        className="p-3 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-darkgreenVariant rounded-xl shadow-sm md:text-base"
-                    >Apply Here </a>
-                </div> */}
                     </div>
                     <div className="basis-1/2 lg:mb-0">
                         <img

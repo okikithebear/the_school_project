@@ -37,7 +37,6 @@ const Founder = () => {
                     </p>
                 </div>
             </section>
-
         </div>
     );
 };

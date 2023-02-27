@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
-import MyModal from './MyModal'
+import React from 'react'
 
-const FloatingButton = () => {
-    const [showMyModal, setShowMyModal] = useState(false)
-    const handleOnClose = () => setShowMyModal(false)
+const FloatingButton = ({modalActions}) => {
     return (
 
-        <div className="flex flex-row fixed bottom-12 right-6 z-10 cursor-pointer" onClick={() => setShowMyModal(true)}>
+
+        <div className="flex flex-row fixed bottom-12 right-6 z-10 cursor-pointer" onClick={() => modalActions.handleModal(modalActions.showModal) }>
+
             <span className="flex text-darkgreenVariant bg-darkBlue1 rounded-full font-mulish font-semibold py-2 px-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                     <path fillRule="evenodd" clipRule="evenodd"
@@ -15,8 +14,6 @@ const FloatingButton = () => {
                 </svg>
                 <span className="pt-0.5">Apply Here</span>
             </span>
-            <MyModal onClose={handleOnClose} visible={showMyModal}/>
-
         </div>
     )
 }

@@ -9,20 +9,30 @@ import About from "./pages/about";
 import FloatingButton from "./components/FloatingButton";
 import Founder from "./pages/founder";
 
+import MyModal from "./components/MyModal";
+import {useState} from "react";
+
 
 
 const App = () => {
+    const [showModal, setShowModal] = useState(false)
+    const handleModal = (showModal) => {
+        setShowModal(!showModal)
+    }
     return (
         <>
             <BrowserRouter>
                 <Navbar/>
-                <FloatingButton/>
+                <FloatingButton modalActions={{handleModal,showModal}}/>
                 <Routes>
-                    <Route path='/' element={<Home/>}/>
+
+                    <Route path='/' element={<Home modalActions={{handleModal,showModal}}/>}/>
+
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
                 </Routes>
                 <Footer/>
+                <MyModal onClose={handleModal} visible={showModal}/>
             </BrowserRouter>
         </>
     );

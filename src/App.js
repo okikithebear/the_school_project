@@ -9,9 +9,9 @@ import About from "./pages/about";
 import FloatingButton from "./components/FloatingButton";
 import Founder from "./pages/founder";
 
-import MyModal from "./components/MyModal";
+import Modal from "./components/Modal";
 import {useState} from "react";
-import Apply from './Application';
+import Admissions from "./pages/admissions";
 
 
 
@@ -31,10 +31,10 @@ const App = () => {
 
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
-                    <Route path='/admissions' element={<Apply/>}/>
+                    <Route path='/admissions' element={<Admissions/>}/>
                 </Routes>
                 <Footer/>
-                <MyModal onClose={handleModal} visible={showModal}/>
+                <Modal onClose={handleModal} visible={showModal}/>
             </BrowserRouter>
         </>
     );

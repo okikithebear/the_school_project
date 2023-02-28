@@ -1,7 +1,7 @@
 import React from "react";
 import SchoolPic1 from '../Images/SchoolPic1.jpg'
 
-export default function MyModal({visible, onClose}) {
+export default function Modal({visible, onClose}) {
 
     const handleOnClose = (e) =>{
         if(e.target.id === 'container') onClose();

@@ -11,6 +11,7 @@ import Founder from "./pages/founder";
 
 import MyModal from "./components/MyModal";
 import {useState} from "react";
+import Apply from './Application';
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
 
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
+                    <Route path='/admissions' element={<Apply/>}/>
                 </Routes>
                 <Footer/>
                 <MyModal onClose={handleModal} visible={showModal}/>

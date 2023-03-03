@@ -1,4 +1,6 @@
 import React from 'react';
+import Teacher1 from '../Images/Teacher1.jpg'
+
 
 const Founder = () => {
     return (

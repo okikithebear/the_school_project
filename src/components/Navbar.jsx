@@ -1,7 +1,7 @@
 import {NavLink, useLocation} from 'react-router-dom'
 import {Transition} from "@headlessui/react";
 
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import React from 'react'
 
 const Navbar = () => {
@@ -20,6 +20,19 @@ const Navbar = () => {
         "/school-life": "School Life.",
     }
     let [isOpen, setIsOpen] = useState(false);
+    const toggleOpen = () => {
+        if(isOpen){
+            setInterval(() => {
+                setIsOpen(false)
+            }, 1000);
+        }
+        setIsOpen(!isOpen)
+    }
+    useEffect(() => {
+        if(isOpen){
+            setIsOpen(!isOpen)
+        }
+    },[location.pathname])
     return (
         <>
             <nav
@@ -42,7 +55,7 @@ const Navbar = () => {
                                 </NavLink>
                                 {link.name === "About Us" ?
                                     <>
-                                        <svg className={"mt-1 ml-1 z-50"} onClick={() => setIsOpen(!isOpen)}
+                                        <svg className={"mt-1 ml-1 z-50"} onClick={() => toggleOpen()}
                                              type="button" id="menu-button" aria-expanded="true"
                                              aria-haspopup="true"
                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24"

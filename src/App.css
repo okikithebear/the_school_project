@@ -37,14 +37,7 @@
   }
 }
 
-:root {
-  --bg-color: #0c0c0c;
-  --primary-color: #0d0d0d;
-  --secondary-color: #fff;
-  --text-color: #fff;
-  --text-color-2: #fff;
-  --overlay-color: rgb(12 12 12 / 63%);
-}
+
 
 .section {
   padding-top: 40px;
@@ -120,12 +113,14 @@
 .contact__form .form-control {
   padding: 1.375rem 0.75rem;
   line-height: 1.5;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  border-radius: 0 !important;
-  border: 1px solid var(--secondary-color);
+  color: white;
+  background-color: #040926;
 }
-
+.contact__form .form-control:focus{
+  border: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #70bf4b;
+}
 p {
   word-break: break-word;
   hyphens: auto;

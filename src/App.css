@@ -113,7 +113,13 @@
   color: white;
   background-color: #040926;
 }
-.contact__form .form-control:focus {
+
+.contact__form .form-control::placeholder {
+  color: #928c8c;
+
+}
+
+.contact__form .form-control:focus{
   border: transparent;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #70bf4b;

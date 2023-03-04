@@ -116,6 +116,12 @@
   color: white;
   background-color: #040926;
 }
+
+.contact__form .form-control::placeholder {
+  color: #928c8c;
+
+}
+
 .contact__form .form-control:focus{
   border: transparent;
   outline: 0;

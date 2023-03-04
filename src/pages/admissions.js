@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import {contactConfig} from "../content_option";
 
 const Admissions = () => {
+    const dateForm = useRef();
+
     return (
         <Container className="font-mulish font-semibold">
 
@@ -97,7 +99,10 @@ const Admissions = () => {
                                     id="Date"
                                     name="date"
                                     placeholder="Applicants Date Of Birth"
-                                    type="date"
+                                    type="text"
+                                    ref={dateForm}
+                                    onFocus={() => (dateForm.current.type = "date")}
+                                    onBlur={() => (dateForm.current.type = "text")}
                                     required
                                 />
                             </Col>

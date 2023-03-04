@@ -21,11 +21,11 @@ const Navbar = () => {
     }
     let [isOpen, setIsOpen] = useState(false);
     const toggleOpen = () => {
-        if(isOpen){
-            setInterval(() => {
-                setIsOpen(false)
-            }, 1000);
-        }
+        // if(isOpen){
+        //     setInterval(() => {
+        //         setIsOpen(false)
+        //     }, 1000);
+        // }
         setIsOpen(!isOpen)
     }
     useEffect(() => {
@@ -46,7 +46,7 @@ const Navbar = () => {
                     <ion-icon name={isOpen ? 'close' : 'menu'}></ion-icon>
                 </div>
 
-                <ul className={`md:flex md:items-center text-white md:w-auto transition-all duration-500 ease-in ${isOpen ? ' ' : 'hidden'} text-white`}>
+                <ul className={`md:flex md:items-center text-white md:w-auto transition-all duration-1000 ease-in ${isOpen ? ' ' : 'hidden'} text-white`}>
                     {
                         Links.map((link) => (
                             <li key={link.name} className='flex md:ml-8 text-xl'>

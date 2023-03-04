@@ -12,6 +12,7 @@ import Founder from "./pages/founder";
 import Modal from "./components/Modal";
 import {useState} from "react";
 import Admissions from "./pages/admissions";
+import SchoolLife from './pages/schoolLife';
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
                     <Route path='/admissions' element={<Admissions/>}/>
+                    <Route path='/school-life' element={<SchoolLife/>}/>
                 </Routes>
                 <Footer/>
                 <Modal onClose={handleModal} visible={showModal}/>

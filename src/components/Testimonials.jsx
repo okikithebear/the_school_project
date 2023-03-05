@@ -3,7 +3,7 @@ import React from 'react'
 const Testimonials = () => {
     return (
         <div className="px-24 my-4">
-           <div className="heading flex justify-center text-5xl font-bold font-mulish text-white py-8">
+           <div className="heading flex justify-center text-3xl md:text-5xl font-bold font-mulish text-white py-8">
             <span className={'text-center'}>Testimonials</span>
            </div>
             <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">

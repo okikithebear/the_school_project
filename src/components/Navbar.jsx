@@ -112,7 +112,7 @@ const Navbar = () => {
                                             </div>
                                         </Transition>
                                     </li> :
-                                    <li key={link.name} className='flex md:ml-8 text-xl' onMouseEnter={() => width >768?"": setIsOpen(false)}>
+                                    <li key={link.name} className='flex md:ml-8 text-xl' onMouseEnter={() => width >768?"": setIsOpen(true)}>
                                         <NavLink to={link.link} className='hover:text-darkgreenVariant'>
                                             {link.name}
                                         </NavLink>

@@ -1,13 +1,54 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {motion} from 'framer-motion';
+import {useEffect} from 'react';
+
 
 const About = () => {
+    const [isOpen, setIsOpen] = useState(1)
+    const [width, setWidth] = useState(0)
+    const variants = {
+        hidden: {
+            y: -100,
+            height: 0,
+            opacity: 0,
+            transition: {
+                y: {stiffness: 1000, velocity: -100}
+            }
+        },
+        visible: {
+            y: 0,
+            opacity: 1,
+            height: 'auto',
+            transition: {
+                y: {stiffness: 1000}
+            }
+        }
+    };
+    const zoom = {
+        visible: {
+            opacity: 1,
+            transition: {
+                scale: 1.3
+            },
+            hidden: {
+                opacity: 1
+            }
+        }
+    };
+    const handleDisplay = (sectionId) => {
+        console.log(sectionId)
+        setIsOpen(sectionId);
+    }
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
     return (
         <div>
             <section className='section mb-6 '>
-                <div className='container'>
-                    <h5 className='main-heading'>Light Workers Academy</h5>
+                <div className='px-6'>
+                    <h5 className='md:text-[25px] text-xl text-greenVariant'>Light Workers Academy</h5>
                     <div className='underline'></div>
-                    <p>
+                    <p className={"text-sm md:text-base"}>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis.""Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
@@ -25,49 +66,110 @@ const About = () => {
 
             <section className='middle-section bg-darkBlue py-2 px-16'>
                 <div className='section-content my-16'>
-                    <div className='text-center text-darkgreenVariant text-3xl'>
+                    <div className='text-center text-darkgreenVariant text-2xl md:text-3xl'>
                         <span>Vision, Mission and Values</span>
                         <p className='underline mx-auto'></p>
                     </div>
-                    <div className="flex flex-row gap-4 p-6">
-                        <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'>
-                            <span className='flex font-semibold text-2xl justify-center'>Our Vision</span>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime
-                                nostrum.
-                                Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
-                                veritatis optio
-                                quaerat impedit. Perferendis, maxime omnis.
-                            </p>
+                    <div className="flex flex-col md:flex-row gap-4 md:p-6 my-16 md:my-0">
+                        <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
+                             onClick={() => handleDisplay(1)}>
+                            <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
+                                Our Vision
+                            </span>
+                            {width <= 768 &&
+                                <motion.p
+                                    initial={"hidden"}
+                                    animate={isOpen === 1 ? "visible" : "hidden"}
+                                    exit={"hidden"}
+                                    variants={variants}
+                                    className="text-[14px]">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
+                                    maxime
+                                    nostrum.
+                                    Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
+                                    veritatis optio
+                                    quaerat impedit. Perferendis, maxime omnis.
+                                </motion.p>
+                            }
+                            {width > 768 &&
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
+                                    maxime
+                                    nostrum.
+                                    Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
+                                    veritatis optio
+                                    quaerat impedit. Perferendis, maxime omnis.
+                                </p>
+                            }
                         </div>
-                        <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'>
-                            <span className='flex font-semibold text-2xl justify-center'>Our Mission</span>
-                            <p className='text-justify pb-2'>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime
-                                nostrum.
-                                Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
-                                veritatis optio
-                                quaerat impedit. Perferendis, maxime omnis.
-                            </p>
+                        <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
+                             onClick={() => handleDisplay(2)}>
+                            <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
+                                Our Mission
+                            </span>
+                            {width <= 768 &&
+                                <motion.p
+                                    initial={"hidden"}
+                                    animate={isOpen === 2 ? "visible" : "hidden"}
+                                    exit={"hidden"}
+                                    variants={variants}
+                                    className="text-[14px]">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
+                                    maxime
+                                    nostrum.
+                                    Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
+                                    veritatis optio
+                                    quaerat impedit. Perferendis, maxime omnis.
+                                </motion.p>
+                            }
+                            {width > 768 &&
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
+                                    maxime
+                                    nostrum.
+                                    Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
+                                    veritatis optio
+                                    quaerat impedit. Perferendis, maxime omnis.
+                                </p>
+                            }
                         </div>
-                        <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'>
+                        <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
+                             onClick={() => handleDisplay(3)}>
                             <span className='flex font-semibold text-2xl justify-center'>Our Values</span>
-                            <p className='text-justify pb-2'>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime
-                                nostrum.
-                                Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
-                                veritatis optio
-                                quaerat impedit. Perferendis, maxime omnis.
-                            </p>
+                            {width <= 768 &&
+                                <motion.p
+                                    initial={"hidden"}
+                                    animate={isOpen === 3 ? "visible" : "hidden"}
+                                    exit={"hidden"}
+                                    variants={variants}
+                                    className="text-[14px]">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
+                                    maxime
+                                    nostrum.
+                                    Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
+                                    veritatis optio
+                                    quaerat impedit. Perferendis, maxime omnis.
+                                </motion.p>
+                            }
+                            {width > 768 &&
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
+                                    maxime
+                                    nostrum.
+                                    Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam
+                                    veritatis optio
+                                    quaerat impedit. Perferendis, maxime omnis.
+                                </p>
+                            }
                         </div>
                     </div>
                 </div>
             </section>
             <section className='section bg-light border-bottom '>
                 <div className='container'>
-                    <h5 className='main-heading'>Why Choose Light Workers Academy?</h5>
+                    <h5 className='md:text-[25px] text-xl text-greenVariant'>Why Choose Light Workers Academy?</h5>
                     <div className='underline'></div>
-                    <p>
+                    <p className={'text-md md:text-base'}>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis. Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -77,31 +179,24 @@ const About = () => {
                     </p>
                 </div>
             </section>
-            <div className="p-6">
-                <div className="flex flex-col md:flex-row lg:mb-0 mt-8 md:mt-24 font-mulish">
-                    <div className="basis-1/2 space-y-10">
+            <div className="md:py-20">
+                <div className="flex flex-col md:flex-row lg:mb-0  font-mulish">
+                    <div className="basis-1/2">
                         <h1
-                            className="text-3xl font-semibold text-center text-darkBlue"
+                            className="text-2xl md:text-3xl font-semibold text-center text-darkBlue"
                         >
                             Light Workers Academy Principles
                         </h1>
                         <p
-                            className="max-w-md mx-auto text-lg text-center text-slate-500  lg:text-left lg:mt-0 lg:mx-0"
+                            className="max-w-md mx-auto text-md md:text-lg text-center text-slate-500 lg:text-left md:py-14"
                         >
                             "To have a stable economy, to have a stable democracy, and to have a modern government is
                             not enough. We have to build new pillars of development. Education, science and technology,
                             innovation and entrepreneurship, and more equality." Sebastian Pinera
                         </p>
-                        {/* <div
-                    className="flex items-center justify-center w-full space-x-4 text-white"
-                >
-                    <a
-                        href="#"
-                        className="p-3 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-darkgreenVariant rounded-xl shadow-sm md:text-base"
-                    >Apply Here </a>
-                </div> */}
+
                     </div>
-                    <div className="basis-1/2 lg:mb-0">
+                    <div className="basis-1/2  md:mt-0 sm:mt-5">
                         <img
                             src="https://images.pexels.com/photos/7750766/pexels-photo-7750766.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt=""

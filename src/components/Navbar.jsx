@@ -20,19 +20,35 @@ const Navbar = () => {
         "/school-life": "School Life.",
     }
     let [isOpen, setIsOpen] = useState(false);
+    let [dropDownOpen, setDropdownOpen] = useState(false);
+    let [width, setWidth] = useState(0);
     const toggleOpen = () => {
         // if(isOpen){
         //     setInterval(() => {
         //         setIsOpen(false)
         //     }, 1000);
         // }
-        setIsOpen(!isOpen)
+        if(width <= 768){
+           setIsOpen(!isOpen)
+        }
+
+    }
+    const toggleDropdown = () => {
+        if(width <= 768){
+
+        }
+        else{
+            setDropdownOpen(!dropDownOpen)
+        }
     }
     useEffect(() => {
         if(isOpen){
             setIsOpen(!isOpen)
         }
     },[location.pathname])
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
     return (
         <>
             <nav
@@ -41,7 +57,7 @@ const Navbar = () => {
                     Light Workers Academy
                 </div>
 
-                <div onClick={() => setIsOpen(!isOpen)}
+                <div onClick={() => toggleOpen()}
                      className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                     <ion-icon name={isOpen ? 'close' : 'menu'}></ion-icon>
                 </div>
@@ -49,13 +65,15 @@ const Navbar = () => {
                 <ul className={`md:flex md:items-center text-white md:w-auto transition-all duration-1000 ease-in ${isOpen ? ' ' : 'hidden'} text-white`}>
                     {
                         Links.map((link) => (
-                            <li key={link.name} className='flex md:ml-8 text-xl'>
-                                <NavLink to={link.link} className='hover:text-darkgreenVariant'>
-                                    {link.name}
-                                </NavLink>
+                            <>
                                 {link.name === "About Us" ?
-                                    <>
-                                        <svg className={"mt-1 ml-1 z-50"} onClick={() => toggleOpen()}
+                                    <li key={link.name} className='flex md:ml-8 text-xl'
+                                        onMouseLeave={() => setDropdownOpen(false)}
+                                        onMouseEnter={() => setDropdownOpen(true)}>
+                                        <NavLink to={link.link} className='hover:text-darkgreenVariant'>
+                                            {link.name}
+                                        </NavLink>
+                                        <svg className={"mt-1 ml-1 z-50"} onClick={() => toggleDropdown()}
                                              type="button" id="menu-button" aria-expanded="true"
                                              aria-haspopup="true"
                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -66,11 +84,11 @@ const Navbar = () => {
                                         </svg>
                                         <Transition
                                             className={"fixed"}
-                                            show={isOpen}
+                                            show={dropDownOpen}
                                             enter="transition ease-out duration-100 transform"
                                             enterFrom="opacity-0 scale-95"
                                             enterTo="opacity-100 scale-100"
-                                            leave="transition ease-in duration-75 transform"
+                                            leave="transition ease-in duration-100 transform"
                                             leaveFrom="opacity-100 scale-100"
                                             leaveTo="opacity-0 scale-95"
                                         >
@@ -93,9 +111,15 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </Transition>
-                                    </> : ""
+                                    </li> :
+                                    <li key={link.name} className='flex md:ml-8 text-xl' onMouseEnter={() => width >768?"": setIsOpen(false)}>
+                                        <NavLink to={link.link} className='hover:text-darkgreenVariant'>
+                                            {link.name}
+                                        </NavLink>
+                                    </li>
                                 }
-                            </li>
+                                </>
+
                         ))
                     }
                 </ul>
@@ -105,8 +129,8 @@ const Navbar = () => {
                 location.pathname !== '/' &&
                 <section className='py-4 bg-darkgreenVariant'>
 
-                    <div className='px-12 my-auto'>
-                        <h4 className="text-darkBlue text-3xl font-extrabold font-mulish">{currentLocation[location.pathname]}</h4>
+                    <div className='md:px-12 px-4 my-auto'>
+                        <h4 className="text-darkBlue text-xl md:text-3xl font-extrabold font-mulish">{currentLocation[location.pathname]}</h4>
                     </div>
 
                 </section>

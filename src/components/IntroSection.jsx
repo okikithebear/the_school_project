@@ -3,14 +3,14 @@ import React from 'react'
 const IntroSection = ({modalActions}) => {
     return (
         <div className="flex flex-col md:flex-row lg:mb-0 mt-8 md:mt-24 font-mulish">
-            <div className="basis-1/2 space-y-10">
+            <div className="basis-1/2 space-y-4 md:space-y-10">
                 <h1
-                    className="text-5xl font-semibold text-center text-darkBlue"
+                    className="md:text-5xl text-2xl font-semibold text-center text-darkBlue"
                 >
                     Light Workers Academy
                 </h1>
                 <p
-                    className="max-w-md mx-auto text-lg text-center text-slate-500  lg:text-left lg:mt-0 lg:mx-0"
+                    className="flex flex-wrap md:w-3/4 w-10/12	 text-justify md:text-center mx-auto md:text-lg text-slate-500 lg:mt-0"
                 >
                     Lightworkers Academy was founded in 2020 with the sole purpose of keeping students' hopes alive.
                     The vision was conceived during the Covid 19 pandemic in an effort to make the classroom accessible
@@ -25,7 +25,7 @@ const IntroSection = ({modalActions}) => {
                     >Apply Here </button>
                 </div>
             </div>
-            <div className="basis-1/2 lg:mb-0">
+            <div className="md:flex hidden basis-1/2 lg:mb-0">
                 <img
                     src="https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt=""

@@ -10,7 +10,7 @@ const Admissions = () => {
 
             <Row className="mb-5 mt-3">
                 <Col lg="8">
-                    <h1 className="display-4 mb-2 tex-darkBlue1"><span
+                    <h1 className="display-4 mb-2 text-darkBlue1"><span
                         className="text-darkgreenVariant">LightWorkers</span> Application</h1>
                     <hr className="t_border my-2 ml-0 text-left"/>
                     <p className="mt-1">We take various subjects, which includes:- Mathematics, Physics, Chemistry,

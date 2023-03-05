@@ -34,12 +34,7 @@ const Navbar = () => {
 
     }
     const toggleDropdown = () => {
-        if(width <= 768){
-
-        }
-        else{
             setDropdownOpen(!dropDownOpen)
-        }
     }
     useEffect(() => {
         if(isOpen){
@@ -67,13 +62,13 @@ const Navbar = () => {
                         Links.map((link) => (
                             <>
                                 {link.name === "About Us" ?
-                                    <li key={link.name} className='flex md:ml-8 text-xl'
+                                    <li key={link.name} className='flex relative md:ml-8 text-xl'
                                         onMouseLeave={() => setDropdownOpen(false)}
                                         onMouseEnter={() => setDropdownOpen(true)}>
                                         <NavLink to={link.link} className='hover:text-darkgreenVariant'>
                                             {link.name}
                                         </NavLink>
-                                        <svg className={"mt-1 ml-1 z-50"} onClick={() => toggleDropdown()}
+                                        <svg className={"mt-1 ml-1 z-50 "} onClick={() => toggleDropdown()}
                                              type="button" id="menu-button" aria-expanded="true"
                                              aria-haspopup="true"
                                              xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -83,7 +78,7 @@ const Navbar = () => {
                                                 fill="#FFFFFF"/>
                                         </svg>
                                         <Transition
-                                            className={"fixed"}
+                                            className={width<= 768?"absolute":"fixed"}
                                             show={dropDownOpen}
                                             enter="transition ease-out duration-100 transform"
                                             enterFrom="opacity-0 scale-95"
@@ -93,8 +88,7 @@ const Navbar = () => {
                                             leaveTo="opacity-0 scale-95"
                                         >
                                             <div
-                                                className="flex w-56 mt-[2.6em] shadow-xl bg-darkBlue rounded-b ring-1
-                                                ring-black ring-opacity-5 divide-y divide-gray-100 text-white font-mulish">
+                                                className="flex  w-56 md:mt-[2.6em] mt-[1.2em] shadow-xl bg-darkBlue rounded-b text-white font-mulish">
                                                 <div className="py-1 w-full">
                                                     <NavLink
                                                         to={"/about/about-us"}
@@ -112,7 +106,7 @@ const Navbar = () => {
                                             </div>
                                         </Transition>
                                     </li> :
-                                    <li key={link.name} className='flex md:ml-8 text-xl' onMouseEnter={() => width >768?"": setIsOpen(false)}>
+                                    <li key={link.name} className='flex md:ml-8 text-xl' onMouseEnter={() => width >768?"": setIsOpen(true)}>
                                         <NavLink to={link.link} className='hover:text-darkgreenVariant'>
                                             {link.name}
                                         </NavLink>

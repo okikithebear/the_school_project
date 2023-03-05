@@ -48,7 +48,7 @@ const About = () => {
                 <div className='px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Light Workers Academy</h5>
                     <div className='underline'></div>
-                    <p className={"text-sm md:text-base"}>
+                    <p className={"text-md md:text-base"}>
                         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                         Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                         quaerat impedit. Perferendis, maxime omnis.""Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
@@ -70,7 +70,7 @@ const About = () => {
                         <span>Vision, Mission and Values</span>
                         <p className='underline mx-auto'></p>
                     </div>
-                    <div className="flex flex-col md:flex-row gap-4 md:p-6 my-16 md:my-0">
+                    <div className="flex flex-col md:flex-row gap-4 md:p-6 my-12 md:my-0">
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(1)}>
                             <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
@@ -82,7 +82,7 @@ const About = () => {
                                     animate={isOpen === 1 ? "visible" : "hidden"}
                                     exit={"hidden"}
                                     variants={variants}
-                                    className="text-[14px]">
+                                    className="text-md">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -113,7 +113,7 @@ const About = () => {
                                     animate={isOpen === 2 ? "visible" : "hidden"}
                                     exit={"hidden"}
                                     variants={variants}
-                                    className="text-[14px]">
+                                    className="text-md">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -142,7 +142,7 @@ const About = () => {
                                     animate={isOpen === 3 ? "visible" : "hidden"}
                                     exit={"hidden"}
                                     variants={variants}
-                                    className="text-[14px]">
+                                    className="text-md">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -165,8 +165,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='section bg-light border-bottom '>
-                <div className='container'>
+            <section className='section bg-light border-bottom'>
+                <div className='px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Why Choose Light Workers Academy?</h5>
                     <div className='underline'></div>
                     <p className={'text-md md:text-base'}>
@@ -180,15 +180,15 @@ const About = () => {
                 </div>
             </section>
             <div className="md:py-20">
-                <div className="flex flex-col md:flex-row lg:mb-0  font-mulish">
-                    <div className="basis-1/2">
+                <div className="flex flex-col md:flex-row font-mulish">
+                    <div className="basis-1/2 pt-10 md:pt-0">
                         <h1
                             className="text-2xl md:text-3xl font-semibold text-center text-darkBlue"
                         >
                             Light Workers Academy Principles
                         </h1>
                         <p
-                            className="max-w-md mx-auto text-md md:text-lg text-center text-slate-500 lg:text-left md:py-14"
+                            className="max-w-md mx-auto text-md md:text-lg text-center text-slate-500 lg:text-left md:py-14 p-6 md:p-0"
                         >
                             "To have a stable economy, to have a stable democracy, and to have a modern government is
                             not enough. We have to build new pillars of development. Education, science and technology,
@@ -196,11 +196,11 @@ const About = () => {
                         </p>
 
                     </div>
-                    <div className="basis-1/2  md:mt-0 sm:mt-5">
+                    <div className="basis-1/2 md:px-0 px-6 mb-4 md:mb-0">
                         <img
                             src="https://images.pexels.com/photos/7750766/pexels-photo-7750766.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt=""
-                            className="relative lg:top-24 xl:top-0 overflow-x-visible rounded-2xl"
+                            className="lg:top-24 xl:top-0 rounded-2xl "
                         />
                     </div>
                 </div>

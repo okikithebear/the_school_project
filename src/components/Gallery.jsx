@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import VisibilitySensor from "react-visibility-sensor";
+import Slider from "./Slider";
+import { imageArray } from "../images";
+import { defaultImages } from "../images";
 
-export default function Gallery({ images }) {
+export default function Gallery({}) {
   const [imagesShownArray, setImagesShownArray] = useState(
-    Array(images.length).fill(false)
+    Array(defaultImages.length).fill(false)
   );
 
   const imageVisibleChange = (index, isVisible) => {
@@ -15,10 +18,27 @@ export default function Gallery({ images }) {
     }
   };
 
+  const [openModal, setOpenModal] = useState(false)
+  const [slideNumber, setSlideNumber] = useState(0)
+  const handleOpenModal = (index) => {
+    setSlideNumber(index)
+    setOpenModal(true)
+    } 
+    const handleModal = () => {
+      console.log('guiycj')
+    setOpenModal(!openModal)
+    }
+
+    useEffect(() => {
+     console.log(imageArray)
+    }, [])
+    
+  
   return (
+    <>
     <div className="grid grid-cols-2 gap-1">
-      {images &&
-        images.map((imageUrl, index) => (
+      {defaultImages &&
+        defaultImages.map((imageUrl, index) => (
           <VisibilitySensor
             key={index}
             partialVisibility={true}
@@ -27,17 +47,24 @@ export default function Gallery({ images }) {
           >
             <GalleryCard
               imageUrl={imageUrl}
+              index={index}
               show={imagesShownArray[index]}
             />
           </VisibilitySensor>
         ))}
     </div>
-  );
-}
+    
+    {openModal && <Slider handleModal={handleModal} slideNumber={slideNumber}/> }
+</>
+    );
 
-function GalleryCard({ imageUrl, show }) {
+     
+
+  
+
+function GalleryCard({ imageUrl, show, index }) {
   return (
-    <div
+    <div onClick={() => handleOpenModal(index)}
       className={`relative transition ease-in duration-300 transform ${
         show ? "" : "translate-y-16 opacity-0"
       }`}
@@ -49,6 +76,10 @@ function GalleryCard({ imageUrl, show }) {
         </div>
       </div>
       <img src={imageUrl} alt="" />
+
+      
     </div>
   );
 }
+}
+

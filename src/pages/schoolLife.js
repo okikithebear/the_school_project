@@ -13,6 +13,7 @@ export default function Schoollife() {
   return (
     <>
       <Gallery images={images} />
+
     </>
   );
 }

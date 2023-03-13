@@ -12,7 +12,7 @@ import Founder from "./pages/founder";
 import Modal from "./components/Modal";
 import {useState} from "react";
 import Admissions from "./pages/admissions";
-import SchoolLife from './pages/schoolLife';
+import Gallery from './components/Gallery'
 
 
 
@@ -21,6 +21,26 @@ const App = () => {
     const handleModal = (showModal) => {
         setShowModal(!showModal)
     }
+    // const galleryImages = [
+    //     {
+    //       img:  "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600"
+    //     },
+    //     {
+    //       img:  "https://images.pexels.com/photos/8471799/pexels-photo-8471799.jpeg?auto=compress&cs=tinysrgb&w=600"
+    //     },
+    //     {
+    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
+    //     },
+    //     {
+    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
+    //     },
+    //     {
+    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
+    //     },
+    //     {
+    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
+    //     }
+    //   ]
     return (
         <>
             <BrowserRouter>
@@ -33,7 +53,7 @@ const App = () => {
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
                     <Route path='/admissions' element={<Admissions/>}/>
-                    <Route path='/school-life' element={<SchoolLife/>}/>
+                    <Route path='/school-life' element={<Gallery/>}/>
                 </Routes>
                 <Footer/>
                 <Modal onClose={handleModal} visible={showModal}/>

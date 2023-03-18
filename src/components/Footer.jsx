@@ -29,6 +29,10 @@ const Footer = () => {
         </div>
       </div>
         <ItemsContainer />
+        <div className="flex flex-row justify-center items-center pb-2 px-5 font-mulish
+           rounded-md text-white md:w-auto md:mt-0 mt-2 ">
+        <h4><span className="text-darkgreenVariant font-extrabold text-lg">Address </span> : No1 alabokun street, Bodija.</h4>
+        </div>
       <div className="flex flex-col justify-center items-center pb-4">
         <div className={'py-2'}>© 2023 All rights reserved.</div>
         <SocialIcons Icons={Icons} />

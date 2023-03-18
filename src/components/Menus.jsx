@@ -1,17 +1,16 @@
 export const CONTACTS = [
-    { name: "ADDRESS", link: "#" },
-    { name: "TELEPHONE", link: "#" },
-    { name: "MAIL", link: "#" },
+    { name: "TELEPHONE", link: "/admissions" },
+    { name: "MAIL", link: "/admissions" },
   ];
   export const QUICKLINKS = [
-    { name: "Aims & Values", link: "#" },
-    { name: "Admissions", link: "#" },
-    { name: "Health Care", link: "#" },
-    { name: "Boarding", link: "#" },
-    { name: "Scholarships", link: "#" },
-    { name: "About Us", link: "/about" },
-    { name: "Prospectus Request", link: "#" },
-    { name: "Alumni", link: "#" },
+    { name: "Aims & Values", link: "/about/founder" },
+    { name: "Admissions", link: "/admissions" },
+    // { name: "Health Care", link: "#" },
+    // { name: "Boarding", link: "#" },
+    // { name: "Scholarships", link: "#" },
+    { name: "About Us", link: "/about/about-us" },
+    // { name: "Prospectus Request", link: "#" },
+    // { name: "Alumni", link: "#" },
   ];
 
   

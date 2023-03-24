@@ -43,7 +43,7 @@ const About = () => {
         setWidth(window.innerWidth)
     }, [])
     return (
-        <div>
+        <div className={"mt-20"}>
             <section className='section mb-6 '>
                 <div className='px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Light Workers Academy</h5>

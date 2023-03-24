@@ -156,18 +156,16 @@ p {
 }
 
 .sliderWrap {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*z-index: 999;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+
 }
 
 .sliderWrap .btnClose,
@@ -203,14 +201,20 @@ p {
   right: 40px;
 }
 
-.fullScreenImage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* .fullScreenImage img {
   max-width: 100%;
   max-height: 100%;
   pointer-events: none;
 } */
+
+.navbar-alt{
+  width: 1289px;
+  height: 75px;
+  left: calc(50% - 1289px/2);
+  /*top: 3px;*/
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), 0px 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+
+}

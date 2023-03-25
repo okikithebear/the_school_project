@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import './App.css';
 import BootstrapCarousel from './components/BootstrapCarousel';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import {Navbar, AlternateNavbar} from './components/Navbar';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -45,6 +45,7 @@ const App = () => {
         <>
             <BrowserRouter>
                 <Navbar/>
+                {/*<AlternateNavbar/>*/}
                 <FloatingButton modalActions={{handleModal,showModal}}/>
                 <Routes>
 

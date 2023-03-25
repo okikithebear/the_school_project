@@ -11,7 +11,7 @@ const Testimonials = () => {
     }, [])
     return (
         <div className="px-6 my-4">
-           <div className="heading flex justify-center text-3xl md:text-5xl font-bold font-mulish text-white py-8">
+           <div className="heading flex justify-center text-3xl md:text-5xl font-bold font-mulish text-gray-400 py-8">
             <span className={'text-center'}>Testimonials</span>
            </div>
             {width <= 768 ? <MobileTestimonial/>:<DesktopTestimonial/> }

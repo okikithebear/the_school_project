@@ -25,14 +25,9 @@ export default function Gallery({}) {
     setOpenModal(true)
     } 
     const handleModal = () => {
-      console.log('guiycj')
     setOpenModal(!openModal)
     }
 
-    useEffect(() => {
-     console.log(imageArray)
-    }, [])
-    
   
   return (
     <>
@@ -70,13 +65,14 @@ function GalleryCard({ imageUrl, show, index }) {
       }`}
     >
       <div className="absolute inset-0 z-10 flex transition duration-200 ease-in hover:opacity-0">
-        <div className="absolute inset-0 bg-darkBlue1 opacity-70"></div>
+        <div className="absolute inset-0 bg-darkBlue1 opacity-70"/>
         <div className="mx-auto text-darkgreenVariant z-10 self-center uppercase tracking-widest text-sm">
-          Light-Workers Life
+          Open Gallery
         </div>
       </div>
-      <img src={imageUrl} alt="" />
-
+      <div className={"flex h-[35em] w-full"}>
+      <img className={"object-cover w-full"} src={imageUrl} alt="" />
+      </div>
       
     </div>
   );

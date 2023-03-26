@@ -1,16 +1,23 @@
-import React, {useRef,useState} from 'react';
+import React, {useRef} from 'react';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Col, Container, Row} from "react-bootstrap";
 import {contactConfig} from "../content_option";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 
 const Admissions = () => {
     const dateForm = useRef();
         const form = useRef();
-      
+        const notify = () => toast.success('Thanks for applying!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
       
         const sendEmail = (e) => {
           e.preventDefault();
@@ -24,7 +31,7 @@ const Admissions = () => {
             )
             .then(
               (result) => {
-                toast.success('Application sent successfully!');
+                toast.success('Message sent successfully!');
                 console.log(result.text);
                 console.log("message sent");
                 e.target.reset();
@@ -35,9 +42,6 @@ const Admissions = () => {
               }
             );
         };
-
-        const [dob, setDob] = useState(null);
-
       
     return (
         <Container className="font-mulish font-semibold">
@@ -128,16 +132,17 @@ const Admissions = () => {
                                 />
                             </Col>
                             <Col lg="6" className="form-group">
-                            <DatePicker
-                                className="form-control rounded-1 focus:outline-darkgreenVariant"
-                                id="Date"
-                                name="user_dob"
-                                placeholderText="Applicants Date Of Birth"
-                                selected={dob}
-                                onChange={date => setDob(date)}
-                                dateFormat="dd/MM/yyyy"
-                                required
-                            />
+                                <input
+                                    className="form-control rounded-1 focus:outline-darkgreenVariant"
+                                    id="Date"
+                                    name="user_dob"
+                                    placeholder="Applicants Date Of Birth"
+                                    type="text"
+                                    ref={dateForm}
+                                    onFocus={() => (dateForm.current.type = "date")}
+                                    onBlur={() => (dateForm.current.type = "text")}
+                                    required
+                                />
                             </Col>
                         </Row>
                         <textarea
@@ -151,13 +156,13 @@ const Admissions = () => {
                         <br/>
                         <Row>
                             <Col lg="12" className="form-group flex text-white">
-                                <button  value="Send" 
+                                <button  value="Send" onClick={notify}
                                     className="py-1.5 px-3 mb-4 mx-auto text-sm font-semibold bg-darkBlue1
                                     hover:bg-darkgreenVariant  transition duration-500 rounded-1 md:text-base"
                                     type=" submit">
                                     Send
                                 </button>
-                                <ToastContainer theme='dark'/>
+                                <ToastContainer/>
                             </Col>
                         </Row>
                     </form>

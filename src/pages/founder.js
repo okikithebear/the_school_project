@@ -27,7 +27,7 @@ const Founder = () => {
                 </div>
                 <div className='container col-md-4   text-justify font-mulish  text-darkBlue1'>
                     <h4  className='font-bold text-xl text-darkgreenVariant'>Hello!</h4>
-                    <h2 className='font-semibold text-2xl mt-1 mb-1'>My Name is <span className='text-darkgreenVariant text-3xl md:text-xl'>Emmanuel Fakolade</span> ~</h2>
+                    <h2 className='font-semibold text-2xl mt-1 mb-1'>My Name is <span className='text-darkgreenVariant text-3xl md:text-xlnnpm start'>Emmanuel Fakolade</span> ~</h2>
                     <p>
                         Over the past 2 years we have been able to reachnout to many students across the globe, and the outcome of our services and indications to humanity through quality education have been met with positivity and high recommendations. At lightworkers we have qualified teachers, for all subjects who have the passion to turn around the grades of students for in a short time.
                         We are professionals, we are the best at what we do, we have the best hands for all grades/levels, including A-levels and college students. Therre is also an arrangment for special studenst who have challenges in asmmioleting faster. We have been able to help them using various approaches and seen positive outcomes.

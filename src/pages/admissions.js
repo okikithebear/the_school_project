@@ -1,10 +1,39 @@
 import React, {useRef} from 'react';
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {Col, Container, Row} from "react-bootstrap";
 import {contactConfig} from "../content_option";
 
 const Admissions = () => {
     const dateForm = useRef();
-
+        const form = useRef();
+      
+      
+        const sendEmail = (e) => {
+          e.preventDefault();
+      
+          emailjs
+            .sendForm(
+              "service_uvp88js",
+              "template_8tja4qk",
+              form.current,
+              "4nwS6Ey-cecXiKWL8"
+            )
+            .then(
+              (result) => {
+                toast.success('Application sent successfully!');
+                console.log(result.text);
+                console.log("message sent");
+                e.target.reset();
+              },
+              (error) => {
+                toast.error('Error sending message. Please try again later.');
+                console.log(error.text);
+              }
+            );
+        };
+      
     return (
         <Container className="font-mulish font-semibold">
 
@@ -41,13 +70,13 @@ const Admissions = () => {
                     <p>{contactConfig.description}</p>
                 </Col>
                 <Col lg="7" className="d-flex align-items-center">
-                    <form className="contact__form w-100">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form w-100"> 
                         <Row>
                             <Col lg="6" className="form-group">
                                 <input
                                     className="form-control focus:outline-darkgreenVariant"
                                     id="name"
-                                    name="name"
+                                    name="user_name"
                                     placeholder="Applicants Name"
                                     type="text"
                                     required
@@ -57,7 +86,7 @@ const Admissions = () => {
                                 <input
                                     className="form-control rounded-1 focus:outline-darkgreenVariant"
                                     id="email"
-                                    name="email"
+                                    name="user_email"
                                     placeholder="Applicants Email"
                                     type="email"
                                     required
@@ -67,7 +96,7 @@ const Admissions = () => {
                                 <input
                                     className="form-control rounded-1 focus:outline-darkgreenVariant"
                                     id="phone"
-                                    name="tel"
+                                    name="user_tel"
                                     placeholder="Applicants Parents Tel"
                                     type="tel"
                                     required
@@ -77,7 +106,7 @@ const Admissions = () => {
                                 <input
                                     className="form-control rounded-1 focus:outline-darkgreenVariant"
                                     id="Age"
-                                    name="number"
+                                    name="user_age"
                                     placeholder="Applicants Age"
                                     type="number"
                                     required
@@ -87,7 +116,7 @@ const Admissions = () => {
                                 <input
                                     className="form-control rounded-1 focus:outline-darkgreenVariant"
                                     id="Address"
-                                    name="name"
+                                    name="user_address"
                                     placeholder="Applicants Address"
                                     type="text"
                                     required
@@ -97,7 +126,7 @@ const Admissions = () => {
                                 <input
                                     className="form-control rounded-1 focus:outline-darkgreenVariant"
                                     id="Date"
-                                    name="date"
+                                    name="user_dob"
                                     placeholder="Applicants Date Of Birth"
                                     type="text"
                                     ref={dateForm}
@@ -118,12 +147,13 @@ const Admissions = () => {
                         <br/>
                         <Row>
                             <Col lg="12" className="form-group flex text-white">
-                                <button
+                                <button  value="Send" 
                                     className="py-1.5 px-3 mb-4 mx-auto text-sm font-semibold bg-darkBlue1
                                     hover:bg-darkgreenVariant  transition duration-500 rounded-1 md:text-base"
                                     type=" submit">
                                     Send
                                 </button>
+                                <ToastContainer theme='dark'/>
                             </Col>
                         </Row>
                     </form>

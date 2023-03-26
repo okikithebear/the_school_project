@@ -21,26 +21,6 @@ const App = () => {
     const handleModal = (showModal) => {
         setShowModal(!showModal)
     }
-    // const galleryImages = [
-    //     {
-    //       img:  "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600"
-    //     },
-    //     {
-    //       img:  "https://images.pexels.com/photos/8471799/pexels-photo-8471799.jpeg?auto=compress&cs=tinysrgb&w=600"
-    //     },
-    //     {
-    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
-    //     },
-    //     {
-    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
-    //     },
-    //     {
-    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
-    //     },
-    //     {
-    //       img:  "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
-    //     }
-    //   ]
     return (
         <>
             <BrowserRouter>
@@ -50,7 +30,6 @@ const App = () => {
                 <Routes>
 
                     <Route path='/' element={<Home modalActions={{handleModal,showModal}}/>}/>
-
                     <Route path='/about/about-us' element={<About/>}/>
                     <Route path='/about/founder' element={<Founder/>}/>
                     <Route path='/admissions' element={<Admissions/>}/>

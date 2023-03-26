@@ -1,9 +1,11 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Col, Container, Row} from "react-bootstrap";
 import {contactConfig} from "../content_option";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Admissions = () => {
     const dateForm = useRef();
@@ -12,6 +14,8 @@ const Admissions = () => {
       
         const sendEmail = (e) => {
           e.preventDefault();
+
+         
       
           emailjs
             .sendForm(
@@ -33,6 +37,8 @@ const Admissions = () => {
               }
             );
         };
+        const [dob, setDob] = useState(null);
+
       
     return (
         <Container className="font-mulish font-semibold">
@@ -103,14 +109,16 @@ const Admissions = () => {
                                 />
                             </Col>
                             <Col lg="6" className="form-group">
-                                <input
-                                    className="form-control rounded-1 focus:outline-darkgreenVariant"
-                                    id="Age"
-                                    name="user_age"
-                                    placeholder="Applicants Age"
-                                    type="number"
-                                    required
-                                />
+                            <DatePicker
+                                className="form-control rounded-1 focus:outline-darkgreenVariant"
+                                id="Date"
+                                name="user_dob"
+                                placeholderText="Applicants Date Of Birth"
+                                selected={dob}
+                                onChange={date => setDob(date)}
+                                dateFormat="dd/MM/yyyy"
+                                required
+                            />
                             </Col>
                             <Col lg="6" className="form-group">
                                 <input

@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef,useState} from 'react';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,8 +14,6 @@ const Admissions = () => {
       
         const sendEmail = (e) => {
           e.preventDefault();
-
-         
       
           emailjs
             .sendForm(
@@ -37,6 +35,7 @@ const Admissions = () => {
               }
             );
         };
+
         const [dob, setDob] = useState(null);
 
       
@@ -109,16 +108,14 @@ const Admissions = () => {
                                 />
                             </Col>
                             <Col lg="6" className="form-group">
-                            <DatePicker
-                                className="form-control rounded-1 focus:outline-darkgreenVariant"
-                                id="Date"
-                                name="user_dob"
-                                placeholderText="Applicants Date Of Birth"
-                                selected={dob}
-                                onChange={date => setDob(date)}
-                                dateFormat="dd/MM/yyyy"
-                                required
-                            />
+                                <input
+                                    className="form-control rounded-1 focus:outline-darkgreenVariant"
+                                    id="Age"
+                                    name="user_age"
+                                    placeholder="Applicants Age"
+                                    type="number"
+                                    required
+                                />
                             </Col>
                             <Col lg="6" className="form-group">
                                 <input
@@ -131,17 +128,16 @@ const Admissions = () => {
                                 />
                             </Col>
                             <Col lg="6" className="form-group">
-                                <input
-                                    className="form-control rounded-1 focus:outline-darkgreenVariant"
-                                    id="Date"
-                                    name="user_dob"
-                                    placeholder="Applicants Date Of Birth"
-                                    type= {window.innerWidth < 768 ? "date" : "text"}
-                                    ref={dateForm}
-                                    onFocus={() => (dateForm.current.type = "date")}
-                                    onBlur={() => (dateForm.current.type = "text")}
-                                    required
-                                />
+                            <DatePicker
+                                className="form-control rounded-1 focus:outline-darkgreenVariant"
+                                id="Date"
+                                name="user_dob"
+                                placeholderText="Applicants Date Of Birth"
+                                selected={dob}
+                                onChange={date => setDob(date)}
+                                dateFormat="dd/MM/yyyy"
+                                required
+                            />
                             </Col>
                         </Row>
                         <textarea

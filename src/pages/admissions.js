@@ -128,7 +128,7 @@ const Admissions = () => {
                                     id="Date"
                                     name="user_dob"
                                     placeholder="Applicants Date Of Birth"
-                                    type="text"
+                                    type= {window.innerWidth < 768 ? "date" : "text"}
                                     ref={dateForm}
                                     onFocus={() => (dateForm.current.type = "date")}
                                     onBlur={() => (dateForm.current.type = "text")}

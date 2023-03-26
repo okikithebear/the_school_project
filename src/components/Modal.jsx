@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 import SchoolPic1 from '../Images/SchoolPic1.jpg'
 
 export default function Modal({visible, onClose}) {

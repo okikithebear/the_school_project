@@ -1,10 +1,40 @@
-import React from "react";
+import React, {useRef} from 'react';
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ItemsContainer from "./ItemsContainer";
 import SocialIcons from "./SocialIcons";
 import { Icons } from "./Menus";
 
 const Footer = () => {
-  return (
+
+  const form = useRef();
+  
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uvp88js",
+        "template_7ifulql",
+        form.current,
+        "4nwS6Ey-cecXiKWL8"
+      )
+      .then(
+        (result) => {
+          toast.success('Thank you for subscribing!');
+          console.log(result.text);
+          console.log("message sent");
+          e.target.reset();
+        },
+        (error) => {
+          toast.error('Error sending message. Please try again later.');
+          console.log(error.text);
+        }
+      );
+  };
+    return (
     <footer className="bg-darkBlue text-white pt-24 md:pt-12 font-mulish">
       <div className="md:flex align-middle justify-between bg-[#ffffff19] p-4" >
         <h1
@@ -13,20 +43,22 @@ const Footer = () => {
         >
         Subscribe to Our Newsletter.
         </h1>
-        <div>
+        <form ref={form} onSubmit={sendEmail}>
           <input
+            name="user_email"
             type="text"
             placeholder="Enter Your Email here"
             className="text-gray-800
            sm:w-72 w-full sm:mr-5 mr-1 h-10 rounded px-2 focus:outline-none"
           />
-          <button
+          <button value="Send"
             className="bg-darkgreenVariant hover:bg-greenVariant duration-300 h-10 px-5 font-mulish
            rounded-md text-white md:w-auto w-1/2 md:mt-0 mt-2 "
           >
             Subscribe
           </button>
-        </div>
+          <ToastContainer theme='dark'/>
+        </form>
       </div>
         <ItemsContainer />
         <div className="flex flex-row justify-center items-center pb-2 px-5 font-mulish

@@ -92,6 +92,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
+                                 
                                 <p>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime

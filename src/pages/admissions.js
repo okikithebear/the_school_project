@@ -31,7 +31,7 @@ const Admissions = () => {
             )
             .then(
               (result) => {
-                toast.success('Message sent successfully!');
+                toast.success('Application sent successfully!');
                 console.log(result.text);
                 console.log("message sent");
                 e.target.reset();
@@ -139,6 +139,7 @@ const Admissions = () => {
                                     placeholder="Applicants Date Of Birth"
                                     type="text"
                                     ref={dateForm}
+                                    onClick={() => (dateForm.current.type = "date")}
                                     onFocus={() => (dateForm.current.type = "date")}
                                     onBlur={() => (dateForm.current.type = "text")}
                                     required

@@ -55,7 +55,8 @@ const Slider = ({slideNumber, handleModal}) => {
                 <div className='flex flex-col'>
                     <div className='fullScreenImage flex relative items-center justify-center w-screen '>
                         <img src={imageArray[slideNumber][imageNumber]}
-                             className='object-cover rounded md:h-[35em] md:w-[50em] h-[40em] w-[60em]' alt=''/>
+                             className='object-cover rounded md:h-[35em] md:w-[50em] h-[40em] w-[60em]' alt=''
+                             style={{ maxWidth: '100%', height: 'auto' }} />
                     </div>
 
                     <div className='flex image-thumbnails mx-auto mt-4 '>

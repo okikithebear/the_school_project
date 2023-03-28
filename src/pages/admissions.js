@@ -37,7 +37,7 @@ const Admissions = () => {
                 e.target.reset();
               },
               (error) => {
-                toast.error('Error sending message. Please try again later.');
+                toast.error('Error sending application. Please try again later.');
                 console.log(error.text);
               }
             );
@@ -133,7 +133,8 @@ const Admissions = () => {
                             </Col>
                             <Col lg="6" className="form-group">
                                 <input
-                                    className="form-control rounded-1 focus:outline-darkgreenVariant"
+                
+            className="form-control rounded-1 focus:outline-darkgreenVariant"
                                     id="Date"
                                     name="user_dob"
                                     placeholder="Applicants Date Of Birth"
@@ -150,7 +151,7 @@ const Admissions = () => {
                             className="form-control rounded-1 focus:outline-darkgreenVariant"
                             id="message"
                             name="message"
-                            placeholder="Message"
+                            placeholder="Why are you applying to light-workers academy?"
                             rows="5"
                             required
                         ></textarea>

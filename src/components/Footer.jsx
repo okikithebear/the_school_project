@@ -29,7 +29,7 @@ const Footer = () => {
           e.target.reset();
         },
         (error) => {
-          toast.error('Error sending message. Please try again later.');
+          toast.error('Error subscribing. Please try again later.');
           console.log(error.text);
         }
       );

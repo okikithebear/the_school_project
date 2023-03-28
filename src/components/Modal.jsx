@@ -33,7 +33,7 @@ export default function Modal({visible, onClose}) {
             e.target.reset();
           },
           (error) => {
-            toast.error('Error sending message. Please try again later.');
+            toast.error('Error sending applications. Please try again later.');
             console.log(error.text);
           }
         );
@@ -50,14 +50,16 @@ export default function Modal({visible, onClose}) {
         <input
          name="user_name"
             type="text"
-            className="border text-white md:p-2 p-1 rounded mb-3 focus-visible:outline-darkgreenVariant"
+            className="border text-darkBlue1  md:p-2 p-1 rounded mb-3 focus-visible:outline-darkgreenVariant"
             placeholder="David Solomon"
+            required
           />
           <h1 className="mb-2 font-semibold text-white text-sm md:text-base">Applicants Age</h1>
         <input
          name="user_age"
             type="number"
             className="border text-darkBlue1 md:p-2 p-1 rounded mb-3 focus-visible:outline-darkgreenVariant"
+            required
           />
           <h1 className="mb-2 font-semibold text-white text-sm md:text-base">Parents Email</h1>
           <input
@@ -65,6 +67,7 @@ export default function Modal({visible, onClose}) {
             type="text"
             className="border text-darkBlue1 md:p-2 p-1 rounded mb-3 focus-visible:outline-darkgreenVariant"
             placeholder="email@example.com"
+            required
           />
           <h1 className="mb-2 font-semibold text-white text-sm md:text-base">Parents Phone Number</h1>
           <input
@@ -72,12 +75,14 @@ export default function Modal({visible, onClose}) {
             type="tel"
             className="border text-darkBlue1 md:p-2 p-1 rounded mb-3 focus-visible:outline-darkgreenVariant"
             placeholder="08033223353"
+            required
           />
           <h1 className="mb-2 font-semibold text-white text-sm md:text-base">Date of birth of Applicant</h1>
            <input
             name="user_dob"
             type="date"
             className="border text-darkBlue1 md:p-2 p-1 rounded mb-3 focus-visible:outline-darkgreenVariant"
+            required
             
           />
 

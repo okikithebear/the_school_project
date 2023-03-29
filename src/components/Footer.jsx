@@ -50,6 +50,7 @@ const Footer = () => {
             placeholder="Enter Your Email here"
             className="text-gray-800
            sm:w-72 w-full sm:mr-5 mr-1 h-10 rounded px-2 focus:outline-none"
+           required
           />
           <button value="Send"
             className="bg-darkgreenVariant hover:bg-greenVariant duration-300 h-10 px-5 font-mulish

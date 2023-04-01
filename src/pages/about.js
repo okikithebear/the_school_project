@@ -65,7 +65,7 @@ const About = () => {
             </section>
 
             <section className='middle-section bg-darkBlue py-2 px-10 '>
-                <div className='section-content my-16'>
+                <div className='section-content my-14'>
                     <div className='text-center text-darkgreenVariant text-2xl md:text-3xl'>
                         {/*<span>Vision, Mission and Values</span>*/}
                         {/*<p className='underline mx-auto'></p>*/}
@@ -94,7 +94,7 @@ const About = () => {
                             }
                             {width > 768 &&
                                  
-                                <p className={'mt-4'}>
+                                <p className={'mt-5'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -126,7 +126,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
-                                <p className={'mt-4'}>
+                                <p className={'mt-5'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -158,7 +158,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
-                                <p className={'mt-4'}>
+                                <p className={'mt-5'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.

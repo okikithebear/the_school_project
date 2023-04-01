@@ -47,7 +47,7 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className='md:flex sticky top-0 z-20 items-center justify-between bg-darkBlue py-4 px-14 font-mulish text-white'>
+                className='md:flex sticky top-0 z-20 items-center justify-between bg-darkBlue py-6 px-14 font-mulish text-white'>
                 <NavLink to={"/"} className='font-semibold text-xl cursor-pointer text-darkgreenVariant hover:text-darkgreenVariant'>
                     Light Workers Academy
                 </NavLink>
@@ -122,7 +122,7 @@ const Navbar = () => {
             </nav>
             {
                 location.pathname !== '/' &&
-                <section className='py-4 bg-darkgreenVariant'>
+                <section className='py-6 bg-darkgreenVariant'>
 
                     <div className='mx-14 my-auto'>
                         <h4 className="text-darkBlue text-xl md:text-3xl font-extrabold font-mulish">{currentLocation[location.pathname]}</h4>

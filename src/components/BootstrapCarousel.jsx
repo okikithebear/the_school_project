@@ -42,9 +42,9 @@ function BootstrapCarousel() {
                         initial={{ opacity: 0}}
                         animate={carouselIndex === 0 ? { opacity: 1}:""}
                         transition={{duration: 1.5, ease: "easeInOut",delay:1}}
-                        className={"flex flex-col absolute w-[15em] h-32 bg-darkBlue -left-32 bottom-52 border-l-8" +
+                        className={"flex flex-col absolute md:w-[15em] w-[6em] md:h-32 h-14 bg-darkBlue -left-32 bottom-52 border-l-8" +
                             " border-l-darkgreenVariant transition-all duration-300"}>
-                        <p className={"text-white font-mulish text-2xl px-6 pt-6 pb-2 font-bold"}>Ideas are worth
+                        <p className={"text-white font-mulish md:text-2xl px-6 pt-6 pb-2 font-bold"}>Ideas are worth
                             spreading</p>
                         <span className={""}>- Charles </span>
                     </motion.div>

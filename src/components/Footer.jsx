@@ -36,13 +36,12 @@ const Footer = () => {
   };
   return (
     <footer className="bg-darkBlue text-white font-mulish">
-        <div className="flex flex-row w-full">
-          <div className='left-col flex flex-col relative pt-20  w-2/3'>
-
-            <div className='flex flex-row justify-evenly'>
+        <div className="flex md:flex-row flex-col w-full">
+          <div className='left-col flex flex-col px-4 md:px-0 lg:px-0 sm:px-0 pt-20 md:w-2/3'>
+            <div className='flex md:flex-row flex-col md:justify-evenly'>
               <div className='subscription basis-1/3'>
                 <h4 className="text-white font-bold">SUBSCRIBE TO OUR NEWSLETTER</h4>
-                <p className="text-gray-400 text-left mt-6 ">
+                <p className="text-gray-400 text-left mt-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales neque ut ligula commodo, ac consequat nisi bibendum.
                 </p>
                 <form ref={form} onSubmit={sendEmail} >
@@ -59,7 +58,7 @@ const Footer = () => {
                   <ToastContainer theme="dark" />
                 </form>
               </div>
-              <div className="quick-links flex justify-center basis-1/3">
+              <div className="quick-links md:flex hidden justify-center basis-1/3">
                 <ItemsContainer />
               </div>
             </div>
@@ -69,7 +68,7 @@ const Footer = () => {
               <SocialIcons Icons={Icons} />
             </div>
           </div>
-          <div className="right-col flex flex-col pt-20 px-12 bg-[#ffffff19] w-1/3">
+          <div className="right-col flex flex-col pt-20 md:px-12 bg-[#ffffff19] w-full md:w-1/3">
             <span className={'font-mulish'}>GET IN TOUCH</span>
             <div className="justify-center mt-2 font-mulish text-white flex flex-col space-y-6">
               <h4 className=''>

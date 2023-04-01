@@ -21,7 +21,7 @@ const IntroSection = ({modalActions}) => {
                 >
                     <button
                         onClick={()=> modalActions.handleModal(modalActions.showModal)}
-                        className="p-3 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-darkgreenVariant rounded-xl shadow-sm md:text-base"
+                        className="p-4 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-darkgreenVariant rounded-xl shadow-sm md:text-base"
                     >Apply Here </button>
                 </div>
             </div>

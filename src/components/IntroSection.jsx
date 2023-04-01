@@ -10,7 +10,7 @@ const IntroSection = ({modalActions}) => {
                     Light Workers Academy
                 </h1>
                 <p
-                    className="flex flex-wrap md:w-3/4 w-10/12	 text-justify md:text-center mx-auto md:text-lg text-slate-500 lg:mt-0"
+                    className="flex flex-wrap md:w-3/4 w-full p-4 text-justify md:text-center mx-auto md:text-lg text-slate-500 lg:mt-0"
                 >
                     Lightworkers Academy was founded in 2020 with the sole purpose of keeping students' hopes alive.
                     The vision was conceived during the Covid 19 pandemic in an effort to make the classroom accessible

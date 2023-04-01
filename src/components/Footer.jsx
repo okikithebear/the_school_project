@@ -36,7 +36,7 @@ const Footer = () => {
   };
   return (
     <footer className="bg-darkBlue text-white font-mulish">
-        <div className="flex md:flex-row flex-col w-full">
+        <div className="flex md:flex-row flex-col-reverse w-full">
           <div className='left-col flex flex-col px-4 md:px-0 lg:px-0 sm:px-0 pt-20 md:w-2/3'>
             <div className='flex md:flex-row flex-col md:justify-evenly'>
               <div className='subscription basis-1/3'>
@@ -68,7 +68,7 @@ const Footer = () => {
               <SocialIcons Icons={Icons} />
             </div>
           </div>
-          <div className="right-col flex flex-col pt-20 md:px-12 bg-[#ffffff19] w-full md:w-1/3">
+          <div className="right-col flex flex-col md:pt-20 md:px-12 px-4 py-12 md:py-0 bg-[#ffffff19] w-full md:w-1/3">
             <span className={'font-mulish'}>GET IN TOUCH</span>
             <div className="justify-center mt-2 font-mulish text-white flex flex-col space-y-6">
               <h4 className=''>

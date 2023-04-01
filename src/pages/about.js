@@ -43,8 +43,8 @@ const About = () => {
         setWidth(window.innerWidth)
     }, [])
     return (
-        <div className={"mt-8"}>
-            <section className='section mb-6 '>
+        <div className={"mt-8 "}>
+            <section className='section mb-6 px-10'>
                 <div className='px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Light Workers Academy</h5>
                     <div className='underline'></div>
@@ -64,7 +64,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className='middle-section bg-darkBlue py-2 px-16'>
+            <section className='middle-section bg-darkBlue py-2 px-10 '>
                 <div className='section-content my-16'>
                     <div className='text-center text-darkgreenVariant text-2xl md:text-3xl'>
                         <span>Vision, Mission and Values</span>
@@ -166,7 +166,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='section bg-light border-bottom'>
+            <section className='section bg-light border-bottom px-10'>
                 <div className='px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Why Choose Light Workers Academy?</h5>
                     <div className='underline'></div>

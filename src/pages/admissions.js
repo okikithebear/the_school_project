@@ -159,7 +159,7 @@ const Admissions = () => {
                         <Row>
                             <Col lg="12" className="form-group flex text-white">
                                 <button  value="Send" onClick={notify}
-                                    className="py-1.5 px-3 mb-4 mx-auto text-sm font-semibold bg-darkBlue1
+                                    className="py-1.5 px-3 mb-12 mx-auto text-sm font-semibold bg-darkBlue1
                                     hover:bg-darkgreenVariant  transition duration-500 rounded-1 md:text-base"
                                     type=" submit">
                                     Send

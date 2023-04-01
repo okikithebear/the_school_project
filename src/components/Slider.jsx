@@ -27,7 +27,7 @@ const Slider = ({slideNumber, handleModal}) => {
             <div
                 className='sliderWrap flex fixed z-20 h-screen w-screen bottom-0 bg-black/[0.9] justify-center items-center overflow-hidden'>
 
-                <div className="fixed top-10 right-10 opacity-40 z-30 cursor-pointer" onClick={handleModal}>
+                <div className="fixed top-10 right-10 opacity-50 z-30 cursor-pointer" onClick={handleModal}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-500" viewBox="0 0 20 20"
                          fill="currentColor">
                         <line x1="5" y1="5" x2="15" y2="15" stroke="#70BF4B" strokeWidth="2"/>
@@ -35,7 +35,7 @@ const Slider = ({slideNumber, handleModal}) => {
                     </svg>
                 </div>
 
-                <div className={"flex items-center opacity-40 z-30 cursor-pointer"} onClick={prevSlide}>
+                <div className={"flex items-center opacity-50 z-30 cursor-pointer"} onClick={prevSlide}>
                     <svg className="absolute left-10" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M40.6353 10.6027C41.3804 11.3332 41.4481 12.4763 40.8385 13.2818L40.6353 13.5126L23.8165 30L40.6353 46.4874C41.3804 47.2179 41.4481 48.361 40.8385 49.1666L40.6353 49.3973C39.8901 50.1278 38.7241 50.1942 37.9024 49.5966L37.667 49.3973L19.3647 31.455C18.6196 30.7245 18.5519 29.5813 19.1615 28.7758L19.3647 28.545L37.667 10.6027C38.4867 9.79911 39.8156 9.79911 40.6353 10.6027Z"
@@ -43,7 +43,7 @@ const Slider = ({slideNumber, handleModal}) => {
                     </svg>
                 </div>
 
-                <div className={"flex items-center opacity-40 z-30 cursor-pointer"} onClick={nextSlide}>
+                <div className={"flex items-center opacity-50 z-30 cursor-pointer"} onClick={nextSlide}>
                     <svg className="absolute right-10" width="60" height="60" viewBox="0 0 60 60" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path

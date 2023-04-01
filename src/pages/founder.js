@@ -4,7 +4,7 @@ import Teacher1 from '../Images/Teacher1.jpg'
 
 const Founder = () => {
     return (
-        <div>
+        <div className={'px-10'}>
             <section className='section'>
                 <div className="container-fluid flex flex-col p-6 lg:flex-row lg:mb-0 font-mulish">
                     <div className="basis-1/2 lg:mx-0 lg:mb-0 lg:w-1/2">

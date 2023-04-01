@@ -53,7 +53,7 @@ const Footer = () => {
                     required
                   />
                   <button value="Send" className=" p-2.5 text-sm font-semibold bg-darkgreenVariant hover:bg-greenVariant
-                   hover:text-darkBlue1 rounded shadow-sm md:text-base">
+                   hover:text-darkBlue1 rounded-md shadow-sm md:text-base">
                     Subscribe  </button>
                   <ToastContainer theme="dark" />
                 </form>

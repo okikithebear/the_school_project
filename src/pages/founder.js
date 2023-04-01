@@ -25,7 +25,7 @@ const Founder = () => {
                         </p>
                     </div>
                 </div>
-                <div className='container col-md-4   text-justify font-mulish  text-darkBlue1'>
+                <div className='p-10  text-justify font-mulish  text-darkBlue1'>
                     <h4  className='font-bold text-xl text-darkgreenVariant'>Hello!</h4>
                     <h2 className='font-semibold text-2xl mt-1 mb-1'>My Name is <span className='text-darkgreenVariant text-3xl md:text-xlnnpm start'>Emmanuel Fakolade</span> ~</h2>
                     <p>

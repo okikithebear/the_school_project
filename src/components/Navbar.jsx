@@ -48,9 +48,9 @@ const Navbar = () => {
         <>
             <nav
                 className='md:flex sticky top-0 z-20 overflow-hidden items-center justify-between bg-darkBlue p-4 font-mulish text-white'>
-                <div className='font-semibold text-xl cursor-pointer text-darkgreenVariant'>
+                <NavLink to={"/"} className='font-semibold text-xl cursor-pointer text-darkgreenVariant hover:text-darkgreenVariant'>
                     Light Workers Academy
-                </div>
+                </NavLink>
 
                 <div onClick={() => toggleOpen()}
                      className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>

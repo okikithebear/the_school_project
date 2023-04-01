@@ -12,7 +12,7 @@ const Testimonials = () => {
     return (
         <div className="md:px-6">
            <div className="heading flex justify-center text-3xl md:text-5xl font-bold font-mulish text-gray-400 pb-8">
-            <span className={'text-center text-darkBlue my-6'}>Testimonials</span>
+            <span className={'text-center text-darkBlue my-2 md:my-6'}>Testimonials</span>
            </div>
             {width <= 768 ? <MobileTestimonial/>:<DesktopTestimonial/> }
 

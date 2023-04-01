@@ -4,7 +4,7 @@ const FloatingButton = ({modalActions}) => {
     return (
 
 
-        <div className="flex flex-row fixed bottom-12 right-10 z-10 cursor-pointer shadow-lg rounded-full"
+        <div className="flex flex-row fixed bottom-12 right-4 md:right-10 z-10 cursor-pointer shadow-lg rounded-full"
              onClick={() => modalActions.handleModal(modalActions.showModal) }>
 
             <span className="flex text-darkgreenVariant bg-darkBlue1 rounded-full font-mulish font-semibold py-2.5 px-4">

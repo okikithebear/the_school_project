@@ -47,7 +47,7 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className='md:flex sticky top-0 z-20 items-center justify-between bg-darkBlue py-6 px-14 font-mulish text-white'>
+                className='md:flex sticky top-0 z-20 items-center justify-between bg-darkBlue py-6 px-4 md:px-14 font-mulish text-white'>
                 <NavLink to={"/"} className='font-semibold text-xl cursor-pointer text-darkgreenVariant hover:text-darkgreenVariant'>
                     Light Workers Academy
                 </NavLink>

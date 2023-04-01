@@ -37,7 +37,8 @@ const Footer = () => {
   return (
     <footer className="bg-darkBlue text-white font-mulish">
         <div className="flex flex-row w-full">
-          <div className='left-col flex flex-col relative pt-20 px-16 w-2/3'>
+          <div className='left-col flex flex-col relative pt-20  w-2/3'>
+
             <div className='flex flex-row justify-evenly'>
               <div className='subscription basis-1/3'>
                 <h4 className="text-white font-bold">SUBSCRIBE TO OUR NEWSLETTER</h4>
@@ -58,7 +59,7 @@ const Footer = () => {
                   <ToastContainer theme="dark" />
                 </form>
               </div>
-              <div className="quick-links flex justify-end basis-1/3">
+              <div className="quick-links flex justify-center basis-1/3">
                 <ItemsContainer />
               </div>
             </div>

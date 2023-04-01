@@ -67,13 +67,14 @@ const About = () => {
             <section className='middle-section bg-darkBlue py-2 px-10 '>
                 <div className='section-content my-16'>
                     <div className='text-center text-darkgreenVariant text-2xl md:text-3xl'>
-                        <span>Vision, Mission and Values</span>
-                        <p className='underline mx-auto'></p>
+                        {/*<span>Vision, Mission and Values</span>*/}
+                        {/*<p className='underline mx-auto'></p>*/}
                     </div>
                     <div className="flex flex-col md:flex-row gap-4 md:p-6 my-12 md:my-0">
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(1)}>
-                            <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
+                            <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                                <i className="fa-solid fa-eye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
                                 Our Vision
                             </span>
                             {width <= 768 &&
@@ -93,7 +94,7 @@ const About = () => {
                             }
                             {width > 768 &&
                                  
-                                <p>
+                                <p className={'mt-4'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -105,7 +106,8 @@ const About = () => {
                         </div>
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(2)}>
-                            <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
+                            <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                                <i className="fa-solid fa-bullseye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
                                 Our Mission
                             </span>
                             {width <= 768 &&
@@ -124,7 +126,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
-                                <p>
+                                <p className={'mt-4'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -136,7 +138,10 @@ const About = () => {
                         </div>
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(3)}>
-                            <span className='flex font-semibold text-2xl justify-center'>Our Values</span>
+                            <span className='flex font-semibold text-2xl justify-start items-center'>
+                                <i className="fa-solid fa-heart bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
+                                Our Values
+                            </span>
                             {width <= 768 &&
                                 <motion.p
                                     initial={"hidden"}
@@ -153,7 +158,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
-                                <p>
+                                <p className={'mt-4'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.

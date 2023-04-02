@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import {imageArray} from '../images'
 
 const Slider = ({slideNumber, handleModal}) => {
@@ -63,7 +63,7 @@ const Slider = ({slideNumber, handleModal}) => {
                         {
                             imageArray[slideNumber].map((imageUrl, index) => (
                                 <div key={index} className='relative basis-1/6'>
-                                    <img className='object-cover w-32 h-32 hover:scale-125 hover:rounded transition duration-300' src={imageUrl}/>
+                                    <img alt=""className='object-cover w-32 h-32 hover:scale-125 hover:rounded transition duration-300' src={imageUrl}/>
                                 </div>
                             ))
                         }

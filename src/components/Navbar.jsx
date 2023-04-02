@@ -124,7 +124,7 @@ const Navbar = () => {
                 location.pathname !== '/' &&
                 <section className='py-6 bg-darkgreenVariant'>
 
-                    <div className='mx-14 my-auto'>
+                    <div className='mx-4 md:mx-14 my-auto'>
                         <h4 className="text-darkBlue text-xl md:text-3xl font-extrabold font-mulish">{currentLocation[location.pathname]}</h4>
                     </div>
 

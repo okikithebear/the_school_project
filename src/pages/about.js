@@ -75,7 +75,7 @@ const About = () => {
         <section className='bg-gray-100 py-10 px-8'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='text-center'>
-              <h2 className='text-3xl uppercase font-extrabold text-darkBlue sm:text-4xl'>
+              <h2 className='text-3xl uppercase font-semibold text-darkBlue sm:text-4xl'>
                 Our History
               </h2>
               <p className='mt-3 max-w-2xl mx-auto text-xl text-darkBlue1 text-center sm:mt-4'>
@@ -344,10 +344,10 @@ const About = () => {
       <div className='py-0 md:py-20 '>
         <div className='flex flex-col md:flex-row font-mulish'>
           <div className='basis-1/2 pt-5 md:pt-10 '>
-            <h1 className='text-2xl md:text-3xl text-lg font-semibold text-center text-darkBlue'>
+            <h1 className='text-xl md:text-2xl  font-semibold text-center text-darkBlue'>
               Light Workers Academy Principles
             </h1>
-            <p className='max-w-md mx-auto text-md md:text-base text-left text-slate-500 lg:text-left md:py-14 px-6 md:mb-1 md:px-6'>
+            <p className='max-w-md mx-auto text-md md:text-base text-left text-slate-500 lg:text-left md:py-14 p-8 md:mb-1 md:p-6'>
               "To have a stable economy, to have a stable democracy, and to have
               a modern government is not enough. We have to build new pillars of
               development. Education, science and technology, innovation and

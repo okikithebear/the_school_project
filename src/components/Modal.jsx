@@ -22,24 +22,7 @@ export default function Modal({ visible, onClose }) {
     };
   }, [visible]);
 
-  useEffect(() => {
 
-    if (visible) {
-      if (window.innerWidth < 768) {
-        document.documentElement.style.overflow = 'hidden';
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = 'hidden';
-      }
-    } else {
-      document.documentElement.style.overflow = 'auto';
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.documentElement.style.overflow = 'auto';
-      document.body.style.overflow = 'auto';
-    };
-  }, [visible]);
 
   const handleOnClose = (e) => {
     if (e.target.id === 'container') onClose();
@@ -73,8 +56,8 @@ export default function Modal({ visible, onClose }) {
   }
 
   return (
-    <form ref={form} onSubmit={sendEmail} id='container' onClick={handleOnClose} className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center font-mulish">
-      <div className=" bg-darkBlue md:p-16 p-2 rounded w-5/6 md:w-2/5">
+    <form ref={form} onSubmit={sendEmail} id='container' onClick={handleOnClose} className="fixed inset-0 bg-white bg-opacity-50 backdrop-blur-sm flex items-center justify-center font-mulish ">
+      <div className=" bg-darkBlue md:p-10 p-2 rounded w-5/6 md:w-2/5">
         <h1 className="font-semibold text-center text-xl md:mb-2 my-2  text-darkgreenVariant">
           Welcome To Light Workers!
         </h1>

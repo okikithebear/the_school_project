@@ -27,14 +27,13 @@ export default function Gallery({ }) {
   const handleModal = () => {
     setOpenModal(!openModal)
   }
-
-
   const descriptions = [
     "Students",
     "Teachers",
     "Classroom",
     "Reacreation",
   ];
+
 
   return (
     <>
@@ -61,6 +60,10 @@ export default function Gallery({ }) {
     </>
   );
 
+
+
+
+
   function GalleryCard({ imageUrl, show, index, description }) {
     return (
       <div onClick={() => handleOpenModal(index)}
@@ -73,10 +76,12 @@ export default function Gallery({ }) {
             {description}
           </div>
         </div>
-        <div className={"flex h-60 sm:h-full w-full"}>
-          <img className={"object-cover w-full h-full"} src={imageUrl} alt="" />
+        <div className={"flex h-[18em] md:h-[35em] w-full"}>
+          <img className={"object-cover w-full"} src={imageUrl} alt="" />
         </div>
+
       </div>
     );
   }
 }
+

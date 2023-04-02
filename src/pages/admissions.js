@@ -64,7 +64,7 @@ const Admissions = () => {
       </div>
 
       <div className='lg:col-span-4 grid lg:grid-cols-12 sec_sp '>
-        <div className='lg:col-span-5 md:col-span-4 mx-1 my-4 px-16'>
+        <div className='lg:col-span-5 md:col-span-4  my-1 px-4'>
           <h3 className='text-darkBlue1 py-4'>Get in touch and Apply</h3>
           <address>
             <strong>Email:</strong>{' '}
@@ -83,16 +83,16 @@ const Admissions = () => {
           </address>
           <p>{contactConfig.description}</p>
         </div>
-        <div className='col-span-5 sm:col-start-2 sm:col-span-8 md:mx-auto md:col-span-6 mt-6 px-4 sm:px-0'>
+        <div className='col-span-5 sm:col-start-2 sm:col-span-8 md:mx-auto md:col-span-6 mt-6 px-6 md:px-4'>
           <form
             ref={form}
             onSubmit={sendEmail}
-            className='contact__form w-full'
+            className='contact__form w-full '
           >
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2'>
               <div>
                 <input
-                  className='form-control w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-md w-full focus:outline-darkgreenVariant'
                   id='name'
                   name='user_name'
                   placeholder="Applicant's Name"
@@ -102,7 +102,7 @@ const Admissions = () => {
               </div>
               <div>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
                   id='email'
                   name='user_email'
                   placeholder="Applicant's Email"
@@ -112,7 +112,7 @@ const Admissions = () => {
               </div>
               <div>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
                   id='phone'
                   name='user_tel'
                   placeholder="Applicant's Parent's Tel"
@@ -122,7 +122,7 @@ const Admissions = () => {
               </div>
               <div>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
                   id='Age'
                   name='user_age'
                   placeholder="Applicant's Age"
@@ -132,7 +132,7 @@ const Admissions = () => {
               </div>
               <div>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
                   id='Address'
                   name='user_address'
                   placeholder="Applicant's Address"
@@ -142,7 +142,7 @@ const Admissions = () => {
               </div>
               <div>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
                   id='Date'
                   name='user_dob'
                   placeholder="Applicant's Date Of Birth"
@@ -160,7 +160,7 @@ const Admissions = () => {
               placeholder='Why are you applying to LightWorkers Academy?'
               rows='5'
               required
-              className='form-control rounded-1 w-full focus:outline-darkgreenVariant h-40 my-4'
+              className='form-control rounded-md w-full focus:outline-darkgreenVariant h-40 my-4'
             ></textarea>
             <div className='flex justify-center'>
               <button

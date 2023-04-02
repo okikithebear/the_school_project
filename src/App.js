@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './App.css';
-import BootstrapCarousel from './components/BootstrapCarousel';
 import Footer from './components/Footer';
 import {Navbar, AlternateNavbar} from './components/Navbar';
 import {BrowserRouter, Route, Routes} from "react-router-dom";

@@ -24,28 +24,27 @@ const About = () => {
             }
         }
     };
-    const zoom = {
-        visible: {
-            opacity: 1,
-            transition: {
-                scale: 1.3
-            },
-            hidden: {
-                opacity: 1
-            }
-        }
-    };
+    // const zoom = {
+    //     visible: {
+    //         opacity: 1,
+    //         transition: {
+    //             scale: 1.3
+    //         },
+    //         hidden: {
+    //             opacity: 1
+    //         }
+    //     }
+    // };
     const handleDisplay = (sectionId) => {
-        console.log(sectionId)
         setIsOpen(sectionId);
     }
     useEffect(() => {
         setWidth(window.innerWidth)
     }, [])
     return (
-        <div className={"mt-8 "}>
-            <section className='section mb-6 px-10'>
-                <div className='px-6'>
+        <div className={"mt-0 md:mt-8 "}>
+            <section className='section mb-6 px-4 md:px-10'>
+                <div className='px-4 md:px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Light Workers Academy</h5>
                     <div className='underline'></div>
                     <p className={"text-md md:text-base"}>
@@ -65,15 +64,16 @@ const About = () => {
             </section>
 
             <section className='middle-section bg-darkBlue py-2 px-10 '>
-                <div className='section-content my-16'>
+                <div className='section-content my-14'>
                     <div className='text-center text-darkgreenVariant text-2xl md:text-3xl'>
-                        <span>Vision, Mission and Values</span>
-                        <p className='underline mx-auto'></p>
+                        {/*<span>Vision, Mission and Values</span>*/}
+                        {/*<p className='underline mx-auto'></p>*/}
                     </div>
                     <div className="flex flex-col md:flex-row gap-4 md:p-6 my-12 md:my-0">
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(1)}>
-                            <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
+                            <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                                <i className="fa-solid fa-eye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
                                 Our Vision
                             </span>
                             {width <= 768 &&
@@ -93,7 +93,7 @@ const About = () => {
                             }
                             {width > 768 &&
                                  
-                                <p>
+                                <p className={'mt-5'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -105,7 +105,8 @@ const About = () => {
                         </div>
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(2)}>
-                            <span className='flex font-semibold text-2xl md:text-3xl justify-center'>
+                            <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                                <i className="fa-solid fa-bullseye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
                                 Our Mission
                             </span>
                             {width <= 768 &&
@@ -124,7 +125,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
-                                <p>
+                                <p className={'mt-5'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -136,7 +137,10 @@ const About = () => {
                         </div>
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(3)}>
-                            <span className='flex font-semibold text-2xl justify-center'>Our Values</span>
+                            <span className='flex font-semibold text-2xl justify-start items-center'>
+                                <i className="fa-solid fa-heart bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
+                                Our Values
+                            </span>
                             {width <= 768 &&
                                 <motion.p
                                     initial={"hidden"}
@@ -153,7 +157,7 @@ const About = () => {
                                 </motion.p>
                             }
                             {width > 768 &&
-                                <p>
+                                <p className={'mt-5'}>
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo
                                     maxime
                                     nostrum.
@@ -166,8 +170,8 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className='section bg-light border-bottom px-10'>
-                <div className='px-6'>
+            <section className='section bg-light border-bottom px-4 md:px-10 bg-gray-200'>
+                <div className='px-4 md:px-6'>
                     <h5 className='md:text-[25px] text-xl text-greenVariant'>Why Choose Light Workers Academy?</h5>
                     <div className='underline'></div>
                     <p className={'text-md md:text-base'}>
@@ -180,9 +184,9 @@ const About = () => {
                     </p>
                 </div>
             </section>
-            <div className="md:py-20">
+            <div className="py-0 md:py-20 ">
                 <div className="flex flex-col md:flex-row font-mulish">
-                    <div className="basis-1/2 pt-10 md:pt-0">
+                    <div className="basis-1/2 pt-5 md:pt-10 ">
                         <h1
                             className="text-2xl md:text-3xl font-semibold text-center text-darkBlue"
                         >

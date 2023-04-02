@@ -2,7 +2,7 @@ import React from 'react'
 
 const MissonSec = () => {
   return (
-    <div className="container-fluid flex flex-col p-6 lg:flex-row lg:mb-0 font-mulish">
+    <div className=" flex flex-col mt-8 md:mt-0 lg:flex-row lg:mb-0 font-mulish">
      <div className="basis-1/2 lg:mx-0 lg:mb-0 lg:w-1/2">
        <img
          src="https://images.pexels.com/photos/8364026/pexels-photo-8364026.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -10,7 +10,7 @@ const MissonSec = () => {
          className="relative  lg:top-24 xl:top-0 overflow-x-visible rounded-2xl"
        />
      </div>
-     <div className="flex flex-col basis-1/2 space-y-4 md:space-y-10 mt-16 lg:mt-16 lg:w-1/2">
+     <div className="flex flex-col basis-1/2 space-y-4 md:space-y-10 mt-8 md:mt-16 lg:w-1/2">
             <h1 className="text-3xl md:text-left sm:text-center font-semibold lg:text-5xl text-darkBlue">
                 Our Mission
             </h1>

@@ -17,9 +17,26 @@ export default function Modal({ visible, onClose }) {
     } else {
       document.body.style.overflow = 'auto';
     }
-
-    // cleanup function to reset the body overflow when the component unmounts
     return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [visible]);
+
+  useEffect(() => {
+
+    if (visible) {
+      if (window.innerWidth < 768) {
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'hidden';
+      }
+    } else {
+      document.documentElement.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.documentElement.style.overflow = 'auto';
       document.body.style.overflow = 'auto';
     };
   }, [visible]);

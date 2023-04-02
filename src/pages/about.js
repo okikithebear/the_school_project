@@ -72,7 +72,7 @@ const About = () => {
         </div>
       </section>
       <div>
-        <section className='bg-gray-100 py-10'>
+        <section className='bg-gray-100 py-10 px-8'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='text-center'>
               <h2 className='text-3xl uppercase font-extrabold text-darkBlue sm:text-4xl'>
@@ -347,7 +347,7 @@ const About = () => {
             <h1 className='text-2xl md:text-3xl text-lg font-semibold text-center text-darkBlue'>
               Light Workers Academy Principles
             </h1>
-            <p className='max-w-md mx-auto text-md md:text-lg text-center text-slate-500 lg:text-left md:py-14 p-6 md:p-0'>
+            <p className='max-w-md mx-auto text-md md:text-base text-left text-slate-500 lg:text-left md:py-14 px-6 md:mb-1 md:px-6'>
               "To have a stable economy, to have a stable democracy, and to have
               a modern government is not enough. We have to build new pillars of
               development. Education, science and technology, innovation and
@@ -358,7 +358,7 @@ const About = () => {
             <img
               src='https://images.pexels.com/photos/7750766/pexels-photo-7750766.jpeg?auto=compress&cs=tinysrgb&w=600'
               alt=''
-              className='lg:top-24 xl:top-0 rounded-2xl '
+              className='lg:top-24 xl:top-0 rounded-2xl px-2  mr-2'
             />
           </div>
         </div>

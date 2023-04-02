@@ -1,6 +1,6 @@
 import React from 'react'
 
-const IntroSection = ({modalActions}) => {
+const IntroSection = ({ modalActions }) => {
     return (
         <div className="flex flex-col md:flex-row lg:mb-0 mt-8 md:mt-24 font-mulish">
             <div className="basis-1/2 space-y-4 md:space-y-10">
@@ -10,7 +10,7 @@ const IntroSection = ({modalActions}) => {
                     Light Workers Academy
                 </h1>
                 <p
-                    className="flex flex-wrap md:w-3/4 w-full py-4 text-justify md:text-center mx-auto md:text-lg text-slate-500 lg:mt-0"
+                    className="flex flex-wrap md:w-3/4 w-full py-4 text-justify md:text-left mx-auto md:text-lg text-slate-500 lg:mt-0"
                 >
                     Lightworkers Academy was founded in 2020 with the sole purpose of keeping students' hopes alive.
                     The vision was conceived during the Covid 19 pandemic in an effort to make the classroom accessible
@@ -20,7 +20,7 @@ const IntroSection = ({modalActions}) => {
                     className="flex items-center justify-center w-full space-x-4 text-white"
                 >
                     <button
-                        onClick={()=> modalActions.handleModal(modalActions.showModal)}
+                        onClick={() => modalActions.handleModal(modalActions.showModal)}
                         className="p-4 text-sm font-semibold bg-darkBlue1 hover:bg-darkBlue hover:text-darkgreenVariant rounded-xl shadow-sm md:text-base"
                     >Apply Here </button>
                 </div>

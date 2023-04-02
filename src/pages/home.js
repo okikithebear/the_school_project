@@ -3,12 +3,13 @@ import React from 'react';
 import IntroSection from '../components/IntroSection';
 import MissionSec from '../components/MissionSec';
 import Testimonials from '../components/Testimonials';
+import Carousel from '../components/Carousel';
 
 const Home = ({modalActions}) => {
     return (
         <>
             <div>
-                {/*<BootstrapCarousel/>*/}
+                <Carousel/>
             </div>
             <section className={'mid-section flex flex-col px-4 md:px-10'}>
                 <IntroSection modalActions={modalActions}/>

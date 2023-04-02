@@ -73,7 +73,7 @@ const About = () => {
                         <div className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
                              onClick={() => handleDisplay(1)}>
                             <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
-                                <i className="fa-solid fa-quote-right bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
+                                <i className="fa-solid fa-eye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6"></i>
                                 Our Vision
                             </span>
                             {width <= 768 &&

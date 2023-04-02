@@ -62,6 +62,17 @@ const About = () => {
                     </p>
                 </div>
             </section>
+            <div>
+            <section className="parallax bg-fixed bg-center bg-cover py-20" style={{backgroundImage: "url('https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"}}>
+                <div className="container mx-auto">
+                    <div className="max-w-4xl mx-auto text-center bg-darkBlue py-10 px-4">
+                    <h2 className="text-white text-4xl font-bold text-darkgreenVariant mb-4">Our History</h2>
+                    <p className="text-white text-lg mb-8 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut magna vel velit aliquet imperdiet. Phasellus euismod ultricies ligula, a auctor odio vulputate nec.consectetur adipiscing elit. Sed ut magna vel velit aliquet imperdiet. Phasellus euismod ultricies ligula, a auctor odio vulputate nec,consectetur adipiscing elit. Sed ut magna vel velit aliquet imperdiet. Phasellus euismod ultricies ligula, a auctor odio vulputate nec</p>
+                    <a href="/about/founder" className="inline-block bg-white text-darkBlue1 font-bold py-3 px-6 rounded-1 hover:bg-darkgreenVariant hover:text-darkBlue1 transition duration-500">Learn More</a>
+                    </div>
+                </div>
+                </section>
+             </div>
 
             <section className='middle-section bg-darkBlue py-2 px-10 '>
                 <div className='section-content my-14'>

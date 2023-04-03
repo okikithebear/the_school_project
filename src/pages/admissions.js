@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../App.css';
 import { contactConfig } from '../content_option';
 
 const Admissions = () => {
@@ -84,15 +85,11 @@ const Admissions = () => {
           <p>{contactConfig.description}</p>
         </div>
         <div className='col-span-5 sm:col-start-2 sm:col-span-8 md:mx-auto md:col-span-6 mt-6 px-6 md:px-4'>
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className='contact__form w-full '
-          >
+          <form ref={form} onSubmit={sendEmail} className='contact__form  '>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2'>
               <div>
                 <input
-                  className='form-control rounded-md w-full focus:outline-darkgreenVariant'
+                  className='form-control rounded-md  focus:outline-darkgreenVariant'
                   id='name'
                   name='user_name'
                   placeholder="Applicant's Name"

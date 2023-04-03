@@ -111,11 +111,16 @@
   padding: 1.375rem 0.75rem;
   line-height: 1.5;
   color: white;
+  width: 100%;
   background-color: #040926;
 }
 
 .contact__form .form-control::placeholder {
   color: #928c8c;
+}
+
+.form-control {
+  width: 100%;
 }
 
 .contact__form .form-control:focus {

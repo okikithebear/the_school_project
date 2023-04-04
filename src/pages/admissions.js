@@ -45,7 +45,7 @@ const Admissions = () => {
   };
 
   return (
-    <div className='font-mulish font-semibold'>
+    <div className='font-mulish font-semibold '>
       <div className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-16'>
         <div className='col-span-1 md:col-span-8'>
           <h1 className='text-2xl md:text-6xl mb-2 text-darkBlue1'>
@@ -65,8 +65,10 @@ const Admissions = () => {
       </div>
 
       <div className='lg:col-span-4 grid lg:grid-cols-12 sec_sp '>
-        <div className='lg:col-span-5 md:col-span-4  my-1 px-4'>
-          <h3 className='text-darkBlue1 py-4'>Get in touch and Apply</h3>
+        <div className='lg:col-span-5 md:col-span-4  my-1 px-4  md:mx-12'>
+          <h3 className='text-darkBlue1 py-1 md:py-4'>
+            Get in touch and Apply
+          </h3>
           <address>
             <strong>Email:</strong>{' '}
             <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
@@ -84,12 +86,12 @@ const Admissions = () => {
           </address>
           <p>{contactConfig.description}</p>
         </div>
-        <div className='col-span-5 sm:col-start-2 sm:col-span-8 md:mx-auto md:col-span-6 mt-6 px-6 md:px-4'>
-          <form ref={form} onSubmit={sendEmail} className='contact__form  '>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2'>
-              <div>
+        <div class='lg:col-span-7 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
+          <form class='contact__form w-full' ref={form} onSubmit={sendEmail}>
+            <div class='grid grid-cols-1 lg:grid-cols-2 gap-1 md:gap-3'>
+              <div class='form-group'>
                 <input
-                  className='form-control rounded-md  focus:outline-darkgreenVariant'
+                  class='form-control  w-full  rounded-md'
                   id='name'
                   name='user_name'
                   placeholder="Applicant's Name"
@@ -97,9 +99,9 @@ const Admissions = () => {
                   required
                 />
               </div>
-              <div>
+              <div class='form-group'>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
+                  class='form-control  w-full  rounded-md'
                   id='email'
                   name='user_email'
                   placeholder="Applicant's Email"
@@ -107,9 +109,9 @@ const Admissions = () => {
                   required
                 />
               </div>
-              <div>
+              <div class='form-group'>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
+                  class='form-control  w-full rounded-md'
                   id='phone'
                   name='user_tel'
                   placeholder="Applicant's Parent's Tel"
@@ -117,9 +119,9 @@ const Admissions = () => {
                   required
                 />
               </div>
-              <div>
+              <div class='form-group'>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
+                  class='form-control  w-full  rounded-md'
                   id='Age'
                   name='user_age'
                   placeholder="Applicant's Age"
@@ -127,9 +129,9 @@ const Admissions = () => {
                   required
                 />
               </div>
-              <div>
+              <div class='form-group'>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
+                  class='form-control  w-full  rounded-md'
                   id='Address'
                   name='user_address'
                   placeholder="Applicant's Address"
@@ -137,9 +139,9 @@ const Admissions = () => {
                   required
                 />
               </div>
-              <div>
+              <div class='form-group'>
                 <input
-                  className='form-control rounded-1 w-full focus:outline-darkgreenVariant rounded-md'
+                  class='form-control ] w-full  rounded-md'
                   id='Date'
                   name='user_dob'
                   placeholder="Applicant's Date Of Birth"
@@ -152,22 +154,25 @@ const Admissions = () => {
               </div>
             </div>
             <textarea
+              class='form-control py-2 px-3 mt-4 rounded-md'
               id='message'
               name='message'
               placeholder='Why are you applying to LightWorkers Academy?'
               rows='5'
               required
-              className='form-control rounded-md w-full focus:outline-darkgreenVariant h-40 my-4'
             ></textarea>
-            <div className='flex justify-center'>
-              <button
-                value='Send'
-                onClick={notify}
-                className='py-2 px-4 my-4 text-sm text-gray-400 rounded font-semibold bg-darkBlue hover:bg-darkgreenVariant transition duration-500 md:text-base'
-              >
-                Send
-              </button>
-              <ToastContainer />
+            <br />
+            <div class='form-group'>
+              <div class='form-group flex justify-center'>
+                <button
+                  class='btn ac_btn bg-darkBlue1 hover:bg-darkGreenVariant py-3 px-6 text-black text-center rounded-md mb-4 mt-1 justify-center items-center'
+                  value='Send'
+                  onClick={notify}
+                  type='submit'
+                >
+                  Send
+                </button>
+              </div>
             </div>
           </form>
         </div>

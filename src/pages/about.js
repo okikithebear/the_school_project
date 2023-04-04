@@ -72,15 +72,16 @@ const About = () => {
         </div>
       </section>
       <div>
-        <section className='bg-gray-100 py-10 px-8'>
+        <section className='bg-gray-100 py-10 px-6 md:px-2'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='text-center'>
-              <h2 className='text-3xl uppercase font-semibold text-darkBlue sm:text-4xl'>
+              <h2 className='text-4xl uppercase font-semibold text-darkBlue sm:text-5xl'>
                 Our History
               </h2>
+              <div className='w-16 h-1 mx-auto my-4 bg-darkBlue'></div>
               <p className='mt-3 max-w-2xl mx-auto text-xl text-darkBlue1 text-center sm:mt-4'>
-                Here at LightWorkers Academy, we have a rich and storied history
-                that spans over a decade.
+                Here at our school, we are just beginning our journey towards a
+                bright future.
               </p>
             </div>
             <div className='mt-10'>
@@ -136,8 +137,11 @@ const About = () => {
                       Growing Every Year
                     </h3>
                     <p className='mt-2 text-base text-gray-500'>
-                      Since our founding, we have grown every year, both in
-                      terms of our student body and our academic offerings.
+                      Since our establishment, we have been committed to
+                      expanding our academic programs and fostering a vibrant
+                      community of learners. Each year, we strive to enhance the
+                      educational experience for our students and provide them
+                      with the resources they need to achieve their goals.
                     </p>
                   </div>
                 </li>
@@ -170,12 +174,14 @@ const About = () => {
                       Founding of LightWorkers Academy
                     </h4>
                     <p className='mt-2 text-base text-gray-500'>
-                      LightWorkers Academy was founded in 2010 by a group of
-                      passionate educators who wanted to create a new kind of
-                      learning experience for students. They envisioned a school
-                      that would not only provide a rigorous academic
-                      curriculum, but also foster creativity, innovation, and a
-                      sense of community among its students.
+                      Our school was founded in [insert year] by a dedicated
+                      group of educators who shared a common vision for a new
+                      kind of learning experience. They believed in providing
+                      more than just a rigorous academic curriculum, but also in
+                      fostering creativity, innovation, and a strong sense of
+                      community among our students. Since then, we have been
+                      committed to growing and evolving every year to provide
+                      the best possible education for our students.
                     </p>
                   </div>
                 </li>
@@ -208,12 +214,13 @@ const About = () => {
                       Expansion and Growth
                     </h4>
                     <p className='mt-2 text-base text-gray-500'>
-                      In the years since its founding, LightWorkers Academy has
-                      grown and expanded, opening new campuses in cities across
-                      the country. Today, the school is known for its innovative
-                      curriculum, talented and dedicated faculty, and its
-                      commitment to creating a vibrant and inclusive learning
-                      community.
+                      Since its inception, the school has experienced
+                      significant growth and expansion, establishing multiple
+                      campuses in various cities throughout the country.
+                      Presently, the school has gained a reputation for its
+                      progressive academic programs, exceptional faculty, and
+                      unwavering dedication to fostering a welcoming and
+                      all-encompassing educational environment.
                     </p>
                   </div>
                 </li>

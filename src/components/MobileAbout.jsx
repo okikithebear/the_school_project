@@ -31,7 +31,7 @@ const TestimonialCarousel = () => {
             <SwiperSlide>
                 <div className={"testimonial-card relative w-full"}>
                     <div className="relative p-8 md:p-10 rounded-xl bg-greenVariant">
-                        <div className="w-100 p-10 md:p-12 rounded-xl bg-greenVariant">
+                        <div className="w-100 p-2 md:p-12 rounded-xl bg-greenVariant">
 
                             <img
                                 src="images/bg-pattern-quotation.svg"
@@ -56,7 +56,7 @@ const TestimonialCarousel = () => {
                                 placeat. Modi, ipsa!
                             </p>
 
-                            <p className="mt-6 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
+                            <p className="mt-5 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
                                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                                 Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                                 quaerat impedit. Perferendis, maxime omnis."
@@ -68,7 +68,7 @@ const TestimonialCarousel = () => {
             <SwiperSlide>
                 <div className={"testimonial-card relative w-full"}>
                     <div className="relative p-8 md:p-10 rounded-xl bg-darkBlue">
-                        <div className="w-100 p-10 md:p-12 rounded-xl bg-darkBlue">
+                        <div className="w-100 p-2 md:p-12 rounded-xl bg-darkBlue">
                             <img
                                 src="images/bg-pattern-quotation.svg"
                                 alt=""
@@ -89,7 +89,7 @@ const TestimonialCarousel = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                                 placeat. Modi, ipsa!
                             </p>
-                            <p className="mt-6 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
+                            <p className="mt-5 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
                                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                                 Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                                 quaerat impedit. Perferendis, maxime omnis."
@@ -102,7 +102,7 @@ const TestimonialCarousel = () => {
             <SwiperSlide>
                 <div className={"testimonial-card relative w-full"}>
                     <div className="relative  p-8 md:p-10 rounded-xl bg-greenVariant">
-                        <div className="w-100 p-10 md:p-12 rounded-xl bg-greenVariant">
+                        <div className="w-100 p-2 md:p-12 rounded-xl bg-greenVariant">
                             <img
                                 src="images/bg-pattern-quotation.svg"
                                 alt=""
@@ -123,7 +123,7 @@ const TestimonialCarousel = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                                 placeat. Modi, ipsa!
                             </p>
-                            <p className="mt-6 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
+                            <p className="mt-5 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
                                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                                 Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                                 quaerat impedit. Perferendis, maxime omnis."
@@ -135,7 +135,7 @@ const TestimonialCarousel = () => {
             <SwiperSlide>
                 <div className={"testimonial-card relative w-full"}>
                     <div className="relative p-8 md:p-10 rounded-xl bg-darkBlue">
-                        <div className="w-100 p-10 md:p-12 rounded-xl bg-darkBlue">
+                        <div className="w-100 p-2 md:p-12 rounded-xl bg-darkBlue">
                             <img
                                 src="images/bg-pattern-quotation.svg"
                                 alt=""
@@ -156,7 +156,7 @@ const TestimonialCarousel = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                                 placeat. Modi, ipsa!
                             </p>
-                            <p className="mt-6 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
+                            <p className="mt-5 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
                                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                                 Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                                 quaerat impedit. Perferendis, maxime omnis."
@@ -168,7 +168,7 @@ const TestimonialCarousel = () => {
             <SwiperSlide>
                 <div className={"testimonial-card relative w-full"}>
                     <div className="relative p-8 md:p-10 rounded-xl bg-greenVariant">
-                        <div className="w-100 p-10 md:p-12 rounded-xl bg-greenVariant">
+                        <div className="w-100 p-2 md:p-12 rounded-xl bg-greenVariant">
                             <img
                                 src="images/bg-pattern-quotation.svg"
                                 alt=""
@@ -189,7 +189,7 @@ const TestimonialCarousel = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                                 placeat. Modi, ipsa!
                             </p>
-                            <p className="mt-6 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
+                            <p className="mt-5 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
                                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                                 Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                                 quaerat impedit. Perferendis, maxime omnis."
@@ -201,7 +201,7 @@ const TestimonialCarousel = () => {
             <SwiperSlide>
                 <div className={"testimonial-card relative w-full"}>
                     <div className="relative p-8  md:p-10 rounded-xl bg-darkBlue">
-                        <div className="w-100 p-10 md:p-12 rounded-xl bg-darkBlue">
+                        <div className="w-100 p-2 md:p-12 rounded-xl bg-darkBlue">
                             <img
                                 src="images/bg-pattern-quotation.svg"
                                 alt=""
@@ -222,7 +222,7 @@ const TestimonialCarousel = () => {
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus in facilis
                                 placeat. Modi, ipsa!
                             </p>
-                            <p className="mt-6 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
+                            <p className="mt-5 opacity-50 text-sm md:text-xl line-clamp-6 text-white">
                                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum atque explicabo maxime nostrum.
                                 Excepturi facere sapiente iste, sed porro praesentium, laudantium dolor aperiam veritatis optio
                                 quaerat impedit. Perferendis, maxime omnis."

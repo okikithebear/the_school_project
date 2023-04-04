@@ -1,13 +1,21 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SchoolPic1 from '../Images/SchoolPic1.jpg'
 
+import '../App.css';
+
 export default function Modal({ visible, onClose }) {
 
+  const [isOpen, setIsOpen] = useState(false);
 
   const form = useRef();
+
+  useEffect(() => {
+    setIsOpen(visible);
+    // ...
+  }, [visible]);
 
 
   useEffect(() => {
@@ -56,7 +64,16 @@ export default function Modal({ visible, onClose }) {
   }
 
   return (
-    <form ref={form} onSubmit={sendEmail} id='container' onClick={handleOnClose} className="fixed inset-0 bg-white bg-opacity-50 backdrop-blur-sm flex items-center justify-center font-mulish ">
+
+
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      id="container"
+      onClick={handleOnClose}
+      className={`fixed inset-0 bg-white bg-opacity-50 ${isOpen ? '' : 'backdrop-blur-sm'
+        } flex items-center justify-center font-mulish`}
+    >
       <div className=" bg-darkBlue md:p-10 p-2 rounded w-5/6 md:w-2/5">
         <h1 className="font-semibold text-center text-xl md:mb-2 my-2  text-darkgreenVariant">
           Welcome To Light Workers!
@@ -112,5 +129,6 @@ export default function Modal({ visible, onClose }) {
         </div>
       </div>
     </form>
+
   );
 }

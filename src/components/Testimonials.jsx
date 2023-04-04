@@ -11,10 +11,10 @@ const Testimonials = () => {
     }, [])
     return (
         <div className="md:px-6">
-            <div className="heading flex flex-col justify-center text-3xl md:text-5xl font-bold font-mulish text-gray-400 pb-8">
-                <span className={'text-center text-darkBlue my-2 md:my-6'}>Testimonials</span>
+            <div className="heading flex flex-col justify-center items-center text-3xl md:text-5xl font-bold font-mulish text-gray-400 pb-3">
+                <span className={'text-center text-darkBlue my-1 md:my-4'}>Testimonials</span>
                 <div class="block md:hidden">
-                    <span class="text-center text-darkgreenVariant text-lg p-16 ">Swipe to see more testimonials</span>
+                    <span class="text-center text-darkgreenVariant text-lg p-2">Swipe to see more</span>
                 </div>
 
             </div>

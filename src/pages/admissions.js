@@ -45,7 +45,7 @@ const Admissions = () => {
   };
 
   return (
-    <div className='font-mulish font-semibold '>
+    <div className='font-mulish md:font-semibold '>
       <div className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-16'>
         <div className='col-span-1 md:col-span-8'>
           <h1 className='text-2xl md:text-6xl mb-2 text-darkBlue1'>
@@ -88,7 +88,7 @@ const Admissions = () => {
         </div>
         <div class='lg:col-span-7 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
           <form class='contact__form w-full' ref={form} onSubmit={sendEmail}>
-            <div class='grid grid-cols-1 lg:grid-cols-2 gap-1 md:gap-3'>
+            <div class='grid grid-cols-1 lg:grid-cols-2 md:gap-3'>
               <div class='form-group'>
                 <input
                   class='form-control  w-full  rounded-md'

@@ -8,6 +8,7 @@ import {motion, AnimatePresence} from 'framer-motion';
 import {useInView} from 'react-intersection-observer';
 
 
+
 const Home = ({modalActions}) => {
     const transition = {
         duration: 0.3,
@@ -193,5 +194,6 @@ const Home = ({modalActions}) => {
             </section>
         </>
     );
+
 };
 export default Home;

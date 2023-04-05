@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import Slider from "./Slider";
-import { imageArray } from "../images";
+import {motion} from 'framer-motion';
 import { defaultImages } from "../images";
 
 export default function Gallery({ }) {
@@ -28,15 +28,18 @@ export default function Gallery({ }) {
     setOpenModal(!openModal)
   }
   const descriptions = [
+    "Awards",
     "Students",
-    "Teachers",
+    "Staff",
     "Classroom",
-    "Reacreation",
   ];
 
 
   return (
-    <>
+    <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{ duration: 1, ease: 'easeInOut' }}>
       <div className="grid grid-cols-2 gap-1">
         {defaultImages &&
           defaultImages.map((imageUrl, index) => (
@@ -57,7 +60,7 @@ export default function Gallery({ }) {
       </div>
 
       {openModal && <Slider handleModal={handleModal} slideNumber={slideNumber} />}
-    </>
+    </motion.div>
   );
 
 

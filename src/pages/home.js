@@ -8,12 +8,11 @@ import {motion, AnimatePresence} from 'framer-motion';
 import {useInView} from 'react-intersection-observer';
 
 
-
 const Home = ({modalActions}) => {
-    const transition = {
-        duration: 0.3,
-        type: "tween",
-    }
+    // const transition = {
+    //     duration: 0.3,
+    //     type: "tween",
+    // }
     const bannerVariants = {
         hidden: {
             opacity: 0,
@@ -28,7 +27,7 @@ const Home = ({modalActions}) => {
                 type: "tween"
             },
         }),
-        
+
     };
     const lineVariants = {
         hidden: {
@@ -44,12 +43,23 @@ const Home = ({modalActions}) => {
                 type: "tween"
             },
         }),
+        exit: {
+            y: 0,
+            opacity: 0
+        }
 
     };
-    const {ref, inView} = useInView({threshold: 0.7});
+    const {ref, inView} = useInView({
+        threshold: 0.5,
+        triggerOnce:true
+    });
 
     return (
-        <>
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 1, ease: 'easeInOut'}}
+        >
             <div>
                 <Carousel/>
             </div>
@@ -58,7 +68,7 @@ const Home = ({modalActions}) => {
                 <MissionSec/>
             </section>
             <div className=' flex md:flex-row flex-col text-darkgreenVariant justify-around bg-darkBlue px-2 md:mt-28
-                            md:px-12 py-8 md:py-4 my-8 md:my-14 font-mulish' ref={ref}>
+                            md:px-12 py-8 md:py-4 my-8 md:my-14 font-mulish h-[30em] md:h-[10em]' ref={ref}>
                 <AnimatePresence>
                     {inView && (
                         <>
@@ -68,13 +78,9 @@ const Home = ({modalActions}) => {
                                 custom={0}
                                 initial='hidden'
                                 animate='visible'
-                                
+                                exit='exit'
                                 variants={bannerVariants}
                             >
-                                {/*<i*/}
-                                {/*    aria-hidden='true'*/}
-                                {/*    className='fas fa-book-reader text-darkBlue bg-darkgreenVariant p-6 rounded-md'*/}
-                                {/*></i>*/}
                                 <span className='text-5xl font-mulish text-white font-semibold'>120</span>
                                 <motion.span
                                     className='underline text-darkgreenVariant'
@@ -101,7 +107,7 @@ const Home = ({modalActions}) => {
                                 custom={1}
                                 initial='hidden'
                                 animate='visible'
-                                
+
                                 variants={bannerVariants}
                             >
                                 {/*<i*/}
@@ -132,7 +138,7 @@ const Home = ({modalActions}) => {
                                 custom={2}
                                 initial='hidden'
                                 animate='visible'
-                                
+
                                 variants={bannerVariants}
                             >
                                 {/*<i*/}
@@ -192,7 +198,7 @@ const Home = ({modalActions}) => {
             <section className={'testimonials flex flex-col px-4 md:px-10 pb-10'}>
                 <Testimonials/>
             </section>
-        </>
+        </motion.div>
     );
 
 };

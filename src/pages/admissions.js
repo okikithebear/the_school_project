@@ -81,11 +81,11 @@ const Admissions = () => {
         initial='hidden'
         animate='visible'
         variants={otherAnimation}
-        className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-16'
+        className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-20'
       >
         <div className='col-span-1 md:col-span-8'>
-          <h1 className='text-2xl md:text-6xl mb-2 text-darkBlue1 font-light'>
-            <span className='text-darkgreenVariant'>LightWorkers</span>{' '}
+          <h1 className='text-2xl  mb-2 text-darkBlue1 md:font-extralight md:text-5xl'>
+            <span className='text-darkgreenVariant '>LightWorkers</span>{' '}
             Application
           </h1>
           <hr className='t_border my-2 ml-0 text-left md:ml-0 md:text-left' />
@@ -101,7 +101,7 @@ const Admissions = () => {
       </motion.div>
 
       <div className='lg:col-span-4 grid lg:grid-cols-12 sec_sp '>
-        <div className='lg:col-span-5 md:col-span-4  my-1 px-4  md:mx-12'>
+        <div className='lg:col-span-5 md:col-span-4  my-1 px-4  md:mx-16'>
           <h3 className='text-darkBlue1 py-1 md:py-4'>
             Get in touch and Apply
           </h3>
@@ -124,7 +124,7 @@ const Admissions = () => {
         </div>
         <div className='lg:col-span-7 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
           <form
-            className='contact__form w-full'
+            className='contact__form w-full '
             ref={form}
             onSubmit={sendEmail}
           >
@@ -136,7 +136,7 @@ const Admissions = () => {
                 className='form-group'
               >
                 <input
-                  className='form-control  w-full  rounded-md'
+                  className='form-control  w-full rounded-md'
                   id='name'
                   name='user_name'
                   placeholder="Applicant's Name"

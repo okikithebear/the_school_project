@@ -1,5 +1,6 @@
-html,body{
-    scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth;
 }
 .App {
   text-align: center;
@@ -146,7 +147,13 @@ body.blur {
   width: 100%;
   background-color: #040926;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .contact__form .form-control {
+    padding: 1rem 0.75rem;
+    font-size: 0.875rem;
+    width: 80vw;
+  }
+}
 .contact__form .form-control::placeholder {
   color: #928c8c;
 }

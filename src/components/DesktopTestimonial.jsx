@@ -131,7 +131,7 @@ const DesktopTestimonial = () => {
                     dolorem alias rem?"
                 </p>
             </div>
-            <div className="p-10 rounded-xl text-slate-800 bg-white md:hidden">
+            <div className="p-10 rounded-xl text-slate-800 bg-darkgreenVariant md:hidden">
                 <div className="flex space-x-4">
                     <img
                         src="https://images.pexels.com/photos/9653757/pexels-photo-9653757.jpeg?auto=compress&cs=tinysrgb&w=600"

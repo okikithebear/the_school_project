@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
+import { motion } from 'framer-motion';
 import 'react-toastify/dist/ReactToastify.css';
 import '../App.css';
 import { contactConfig } from '../content_option';
@@ -43,14 +44,47 @@ const Admissions = () => {
         }
       );
   };
+  const formAnimation = {
+    hidden: {
+      x: '60vw',
+    },
+    visible: {
+      x: 0,
+      transition: {
+        delay: 0.5,
+        duration: 1,
+        type: 'tween',
+      },
+    },
+  };
+  const otherAnimation = {
+    hidden: {
+      x: '-60vw',
+    },
+    visible: {
+      x: 0,
+      transition: {
+        duration: 1,
+        type: 'tween',
+      },
+    },
+  };
 
   return (
-    <div className='font-mulish md:font-semibolds'>
-      <div className='md:bg-darkgreenVariant bg-opacity-50 md:bg-opacity-0 h-full w-full'></div>
-
-      <div className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-16'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+      className='font-mulish md:font-semibold'
+    >
+      <motion.div
+        initial='hidden'
+        animate='visible'
+        variants={otherAnimation}
+        className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-16'
+      >
         <div className='col-span-1 md:col-span-8'>
-          <h1 className='text-2xl md:text-6xl mb-2 text-darkBlue1'>
+          <h1 className='text-2xl md:text-6xl mb-2 text-darkBlue1 font-light'>
             <span className='text-darkgreenVariant'>LightWorkers</span>{' '}
             Application
           </h1>
@@ -64,7 +98,7 @@ const Admissions = () => {
             directly. Also below is our email and phone contacts on reaching us
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <div className='lg:col-span-4 grid lg:grid-cols-12 sec_sp '>
         <div className='lg:col-span-5 md:col-span-4  my-1 px-4  md:mx-12'>
@@ -88,62 +122,96 @@ const Admissions = () => {
           </address>
           <p>{contactConfig.description}</p>
         </div>
-        <div class='lg:col-span-7 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
-          <form class='contact__form w-full' ref={form} onSubmit={sendEmail}>
-            <div class='grid grid-cols-1 lg:grid-cols-2 md:gap-3'>
-              <div class='form-group'>
+        <div className='lg:col-span-7 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
+          <form
+            className='contact__form w-full'
+            ref={form}
+            onSubmit={sendEmail}
+          >
+            <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-x-3'>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={formAnimation}
+                className='form-group'
+              >
                 <input
-                  class='form-control  w-full  rounded-md'
+                  className='form-control  w-full  rounded-md'
                   id='name'
                   name='user_name'
                   placeholder="Applicant's Name"
                   type='text'
                   required
                 />
-              </div>
-              <div class='form-group'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={formAnimation}
+                className='form-group'
+              >
                 <input
-                  class='form-control  w-full  rounded-md'
+                  className='form-control  w-full  rounded-md'
                   id='email'
                   name='user_email'
                   placeholder="Applicant's Email"
                   type='email'
                   required
                 />
-              </div>
-              <div class='form-group'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={formAnimation}
+                className='form-group'
+              >
                 <input
-                  class='form-control  w-full rounded-md'
+                  className='form-control  w-full rounded-md'
                   id='phone'
                   name='user_tel'
                   placeholder="Applicant's Parent's Tel"
                   type='tel'
                   required
                 />
-              </div>
-              <div class='form-group'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={formAnimation}
+                className='form-group'
+              >
                 <input
-                  class='form-control  w-full  rounded-md'
+                  className='form-control  w-full  rounded-md'
                   id='Age'
                   name='user_age'
                   placeholder="Applicant's Age"
                   type='number'
                   required
                 />
-              </div>
-              <div class='form-group'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={formAnimation}
+                className='form-group'
+              >
                 <input
-                  class='form-control  w-full  rounded-md'
+                  className='form-control  w-full  rounded-md'
                   id='Address'
                   name='user_address'
                   placeholder="Applicant's Address"
                   type='text'
                   required
                 />
-              </div>
-              <div class='form-group'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                animate='visible'
+                variants={formAnimation}
+                className='form-group'
+              >
                 <input
-                  class='form-control ] w-full  rounded-md'
+                  className='form-control w-full  rounded-md'
                   id='Date'
                   name='user_dob'
                   placeholder="Applicant's Date Of Birth"
@@ -153,21 +221,27 @@ const Admissions = () => {
                   onBlur={() => (dateForm.current.type = 'text')}
                   required
                 />
-              </div>
+              </motion.div>
             </div>
-            <textarea
-              class='form-control py-2 px-3 mt-4 rounded-md'
+            <motion.textarea
+              initial='hidden'
+              animate='visible'
+              variants={formAnimation}
+              className='form-control py-2 px-3  rounded-md'
               id='message'
               name='message'
               placeholder='Why are you applying to LightWorkers Academy?'
               rows='5'
               required
-            ></textarea>
+            ></motion.textarea>
             <br />
-            <div class='form-group'>
-              <div class='form-group flex justify-center'>
+            <div className='form-group py-6'>
+              <div className='form-group flex justify-center'>
                 <button
-                  class='btn ac_btn bg-darkBlue1 hover:bg-darkGreenVariant py-3 px-6 text-black text-center rounded-md mb-4 mt-1 justify-center items-center'
+                  className='btn bg-darkBlue1 hover:bg-darkGreenVariant py-2 px-6 text-white bg-darkBlue
+                                     text-center rounded-full mb-4 mt-1 justify-center items-center font-semibold font-mulish
+                                     text-xl hover:text-darkBlue hover:bg-darkgreenVariant hover:scale-105 transition
+                                     duration-300'
                   value='Send'
                   onClick={notify}
                   type='submit'
@@ -179,7 +253,7 @@ const Admissions = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: "School Life", link: "/school-life" },
     ];
     const currentLocation = {
-        "/about/about-us": "About Us.",
+        "/about/about-us": "Our History.",
         "/about/founder": "Our Founder.",
         "/home": "Home.",
         "/admissions": "Admissions.",

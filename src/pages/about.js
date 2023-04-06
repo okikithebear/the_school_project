@@ -23,17 +23,6 @@ const About = () => {
       },
     },
   };
-  // const zoom = {
-  //     visible: {
-  //         opacity: 1,
-  //         transition: {
-  //             scale: 1.3
-  //         },
-  //         hidden: {
-  //             opacity: 1
-  //         }
-  //     }
-  // };
   const handleDisplay = (sectionId) => {
     setIsOpen(sectionId);
   };
@@ -41,7 +30,11 @@ const About = () => {
     setWidth(window.innerWidth);
   }, []);
   return (
-    <div className={'mt-0 md:mt-8 '}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+    >
       <section className='section mb-6 px-4 md:px-10'>
         <div className='px-4 md:px-6'>
           <h5 className='md:text-[25px] text-xl text-greenVariant'>
@@ -72,9 +65,9 @@ const About = () => {
         </div>
       </section>
       <div>
-        <section className='bg-gray-100 py-10 px-6'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='text-center'>
+        <section className='bg-gray-100'>
+          <div className='p-6 md:p-16'>
+            <div className='text-center hidden'>
               <h2 className='text-4xl uppercase font-semibold text-darkBlue sm:text-5xl'>
                 Our History
               </h2>
@@ -84,7 +77,7 @@ const About = () => {
                 bright future.
               </p>
             </div>
-            <div className='mt-10'>
+            <div className='flex flex-row md:py-0 py-4'>
               <ul className='space-y-4'>
                 <li className='flex'>
                   <div className='flex-shrink-0'>
@@ -238,9 +231,16 @@ const About = () => {
               className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
               onClick={() => handleDisplay(1)}
             >
-              <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
-                <i className='fa-solid fa-eye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6'></i>
-                Our Vision
+              <span className='flex flex-row items-center justify-between'>
+                <span className='font-semibold text-2xl md:text-3xl justify-start items-center'>
+                  <i className='fa-solid fa-eye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6' />
+                  Our Vision
+                </span>
+                {isOpen !== 1 && (
+                  <span>
+                    <i className='flex md:hidden fa-solid fa-chevron-down text-4xl'></i>
+                  </span>
+                )}
               </span>
               {width <= 768 && (
                 <motion.p
@@ -269,9 +269,16 @@ const About = () => {
               className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
               onClick={() => handleDisplay(2)}
             >
-              <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
-                <i className='fa-solid fa-bullseye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6'></i>
-                Our Mission
+              <span className='flex flex-row items-center justify-between'>
+                <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                  <i className='fa-solid fa-bullseye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6' />
+                  Our Mission
+                </span>
+                {isOpen !== 2 && (
+                  <span>
+                    <i className='flex md:hidden fa-solid fa-chevron-down text-4xl'></i>
+                  </span>
+                )}
               </span>
               {width <= 768 && (
                 <motion.p
@@ -300,9 +307,16 @@ const About = () => {
               className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
               onClick={() => handleDisplay(3)}
             >
-              <span className='flex font-semibold text-2xl justify-start items-center'>
-                <i className='fa-solid fa-heart bg-darkgreenVariant text-darkBlue p-6 rounded mr-6'></i>
-                Our Values
+              <span className='flex flex-row items-center justify-between'>
+                <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                  <i className='fa-solid fa-heart bg-darkgreenVariant text-darkBlue p-6 rounded mr-6' />
+                  Our Vision
+                </span>
+                {isOpen !== 3 && (
+                  <span>
+                    <i className='flex md:hidden fa-solid fa-chevron-down text-4xl'></i>
+                  </span>
+                )}
               </span>
               {width <= 768 && (
                 <motion.p
@@ -351,10 +365,13 @@ const About = () => {
       <div className=' md:py-20'>
         <div className='flex flex-col md:flex-row font-mulish'>
           <div className='basis-1/2 pt-5 md:pt-10 '>
-            <h1 className='text-lg md:text-2xl font-semibold text-center text-darkBlue'>
+            <h1 className='text-lg md:text-3xl font-semibold text-center text-darkBlue'>
               Light Workers Academy Principles
             </h1>
-            <p className='max-w-md mx-auto text-md md:text-base text-left text-slate-500 lg:text-left md:py-8 py-4 md:mb-1 md:px-8 px-8'>
+            <p
+              className='mx-auto max-w-md md:max-w-xl text-md md:text-base text-left text-slate-500 md:text-center
+                          md:py-8 py-4 md:mb-1 md:px-10 px-10'
+            >
               "To have a stable economy, to have a stable democracy, and to have
               a modern government is not enough. We have to build new pillars of
               development. Education, science and technology, innovation and
@@ -370,7 +387,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

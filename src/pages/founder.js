@@ -1,8 +1,15 @@
 import React from 'react';
+import {motion} from 'framer-motion';
+
 
 const Founder = () => {
   return (
-    <div className={'px-4 md:px-10'}>
+    <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        className={'px-4 md:px-10'}
+    >
       <section className='section'>
         <div className='container-fluid flex flex-col p-2 md:p-6 lg:flex-row lg:mb-0 font-mulish'>
           <div className='basis-1/2 lg:mx-0 lg:mb-0 lg:w-1/2'>
@@ -55,7 +62,7 @@ const Founder = () => {
           </p>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

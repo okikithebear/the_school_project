@@ -12,19 +12,20 @@ import Modal from './components/Modal';
 import { useState } from 'react';
 import Admissions from './pages/admissions';
 import Gallery from './components/Gallery';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
   const handleModal = (showModal) => {
     setShowModal(!showModal);
   };
-
   return (
     <>
       <BrowserRouter>
         <Navbar />
         {/*<AlternateNavbar/>*/}
         <FloatingButton modalActions={{ handleModal, showModal }} />
+        <ScrollToTop />
         <Routes>
           <Route
             path='/'

@@ -45,7 +45,9 @@ const Admissions = () => {
   };
 
   return (
-    <div className='font-mulish md:font-semibold '>
+    <div className='font-mulish md:font-semibolds'>
+      <div className='md:bg-darkgreenVariant bg-opacity-50 md:bg-opacity-0 h-full w-full'></div>
+
       <div className='grid grid-cols-1 gap-5 my-4 mx-4 md:mx-16'>
         <div className='col-span-1 md:col-span-8'>
           <h1 className='text-2xl md:text-6xl mb-2 text-darkBlue1'>

@@ -72,7 +72,7 @@ const About = () => {
         </div>
       </section>
       <div>
-        <section className='bg-gray-100 py-10 px-6 md:px-2'>
+        <section className='bg-gray-100 py-10 px-6'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='text-center'>
               <h2 className='text-4xl uppercase font-semibold text-darkBlue sm:text-5xl'>

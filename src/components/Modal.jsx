@@ -30,6 +30,18 @@ export default function Modal({ visible, onClose }) {
     };
   }, [visible]);
 
+  function toggleModal() {
+    const body = document.querySelector('body');
+    const modal = document.querySelector('#modal');
+
+    if (modal.classList.contains('open')) {
+      // add blur effect to body
+      body.classList.add('blur');
+    } else {
+      // remove blur effect from body
+      body.classList.remove('blur');
+    }
+  }
 
 
   const handleOnClose = (e) => {
@@ -63,13 +75,33 @@ export default function Modal({ visible, onClose }) {
       );
   }
 
+
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const modal = document.querySelector('#modal');
+  //   const closeButton = modal.querySelector('.close-button');
+
+  //   modal.addEventListener('click', (event) => {
+  //     if (event.target === modal || event.target === closeButton) {
+  //       modal.classList.remove('open');
+  //       toggleModal();
+  //     }
+  //   });
+
+  //   // assume there is a button that opens the modal with ID #open-modal
+  //   const openModalButton = document.querySelector('#open-modal');
+  //   openModalButton.addEventListener('click', () => {
+  //     modal.classList.add('open');
+  //     toggleModal();
+  //   });
+
+  // });
   return (
 
 
     <form
       ref={form}
       onSubmit={sendEmail}
-      id="container"
+      id="container modal"
       onClick={handleOnClose}
       className={`fixed inset-0 bg-white bg-opacity-50 ${isOpen ? '' : 'backdrop-blur-sm'
         } flex items-center justify-center font-mulish`}

@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
+
 const TestimonialCarousel = () => {
     return (
 
@@ -29,7 +30,7 @@ const TestimonialCarousel = () => {
         >
 
             <SwiperSlide>
-                <div className={"testimonial-card relative w-full"}>
+                <div className={"testimonial-card relative w-full swiper-container"}>
                     <div className="relative p-8 md:p-10 rounded-xl bg-greenVariant">
                         <div className="w-100 p-2 md:p-12 rounded-xl bg-greenVariant">
 

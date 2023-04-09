@@ -2,9 +2,9 @@ import React from 'react';
 
 const DesktopTestimonial = () => {
     return (
-        <div className="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2">
+        <div className="grid gap-6 grid-cols-1 text-white lg:grid-cols-4 lg:grid-rows-2 md:grid-rows-2">
 
-            <div className="relative p-10 rounded-xl bg-darkgreenVariant md:col-span-2">
+            <div className="relative p-10 rounded-xl bg-darkgreenVariant lg:col-span-2 sm:col-span-1 ">
 
                 <img
                     src="images/bg-pattern-quotation.svg"
@@ -35,7 +35,7 @@ const DesktopTestimonial = () => {
                     quaerat impedit. Perferendis, maxime omnis."
                 </p>
             </div>
-            <div className="p-10 rounded-xl bg-darkBlue1">
+            <div className="p-10 rounded-xl bg-darkBlue1  sm:col-span-1">
 
                 <div className="flex space-x-4">
                     <img
@@ -60,7 +60,7 @@ const DesktopTestimonial = () => {
             </div>
 
 
-            <div className="hidden p-10 rounded-xl text-white bg-darkgreenVariant md:block md:row-span-2">
+            <div className="hidden p-10 rounded-xl text-white bg-darkgreenVariant lg:block  lg:row-span-2 sm:col-span-1">
 
                 <div className="flex space-x-4">
                     <img
@@ -108,7 +108,7 @@ const DesktopTestimonial = () => {
                     optio nemo"
                 </p>
             </div>
-            <div className="p-10 rounded-xl bg-darkBlue1 text-white md:col-span-2">
+            <div className="p-10 rounded-xl bg-darkBlue1 text-white lg:col-span-2 sm:col-span-1">
 
                 <div className="flex space-x-4">
                     <img
@@ -131,7 +131,7 @@ const DesktopTestimonial = () => {
                     dolorem alias rem?"
                 </p>
             </div>
-            <div className="p-10 rounded-xl text-slate-800 bg-darkgreenVariant md:hidden">
+            <div className="p-10 rounded-xl text-slate-800 bg-darkgreenVariant md:hidden sm:col-span-1">
                 <div className="flex space-x-4">
                     <img
                         src="https://images.pexels.com/photos/9653757/pexels-photo-9653757.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -156,4 +156,4 @@ const DesktopTestimonial = () => {
     );
 };
 
-export default DesktopTestimonial;
+export default DesktopTestimonial;  

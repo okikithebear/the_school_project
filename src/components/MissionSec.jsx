@@ -11,7 +11,7 @@ const MissonSec = () => {
         />
       </div>
       <div className="flex flex-col basis-1/2 space-y-4 md:space-y-10 mt-8 md:mt-16 md:mx-12   lg:w-1/2">
-        <h1 className="text-3xl md:text-left sm:text-center font-semibold lg:text-5xl text-darkBlue">
+        <h1 className="text-3xl md:text-left sm:text-center font-semibold lg:text-5xl text-darkBlue lg:mt-6">
           Our Mission
         </h1>
         <p className="md:text-lg text-slate-500 md:w-5/6 w-full lg:mt-0 lg:mx-0">

@@ -3,9 +3,9 @@ import React from 'react'
 const IntroSection = ({ modalActions }) => {
     return (
         <div className="flex flex-col md:flex-row lg:mb-0 mt-8 md:mt-24 font-mulish">
-            <div className="basis-1/2 space-y-4 md:space-y-10">
+            <div className="basis-1/2 space-y-4 lg:space-y-6 md:space-y-10">
                 <h1
-                    className="md:text-5xl text-2xl font-semibold text-left md:text-center text-darkBlue"
+                    className="md:text-5xl lg:text-4xl text-2xl font-semibold text-left md:text-center text-darkBlue"
                 >
                     Light Workers Academy
                 </h1>
@@ -29,7 +29,7 @@ const IntroSection = ({ modalActions }) => {
                 <img
                     src="https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt=""
-                    className="relative lg:top-24 xl:top-0 overflow-x-visible rounded-2xl"
+                    className="relative lg:top-16 xl:top-0 overflow-x-visible rounded-2xl"
                 />
             </div>
         </div>

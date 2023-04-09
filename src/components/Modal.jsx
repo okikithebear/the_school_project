@@ -2,70 +2,52 @@ import React, { useRef, useEffect, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import SchoolPic1 from '../Images/SchoolPic1.jpg'
-
+import SchoolPic1 from '../Images/SchoolPic1.jpg';
 import '../App.css';
 
 export default function Modal({ visible, onClose }) {
-
-  const [isOpen, setIsOpen] = useState(false);
-
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const form = useRef();
 
   useEffect(() => {
-    setIsOpen(visible);
-    // ...
-  }, [visible]);
-
-
-  useEffect(() => {
-    // set the body overflow to hidden when the modal is opened
     if (visible) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
   }, [visible]);
 
-  function toggleModal() {
-    const body = document.querySelector('body');
-    const modal = document.querySelector('#modal');
-
-    if (modal.classList.contains('open')) {
-      // add blur effect to body
-      body.classList.add('blur');
+  useEffect(() => {
+    const body = document.body;
+    if (isNavbarOpen) {
+      body.classList.add('navbar-open');
     } else {
-      // remove blur effect from body
-      body.classList.remove('blur');
+      body.classList.remove('navbar-open');
     }
-  }
-
+  }, [isNavbarOpen]);
 
   const handleOnClose = (e) => {
-    if (e.target.id === 'container') onClose();
-  }
-  if (!visible) return null;
-
-
+    if (e.target.id === 'container') {
+      onClose();
+      setIsNavbarOpen(false);
+    }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_uvp88js",
-        "template_8tja4qk",
+        'service_uvp88js',
+        'template_8tja4qk',
         form.current,
-        "4nwS6Ey-cecXiKWL8"
+        '4nwS6Ey-cecXiKWL8'
       )
       .then(
         (result) => {
           toast.success('Application sent successfully!');
           console.log(result.text);
-          console.log("message sent");
+          console.log('message sent');
           e.target.reset();
         },
         (error) => {
@@ -73,38 +55,25 @@ export default function Modal({ visible, onClose }) {
           console.log(error.text);
         }
       );
+  };
+
+  if (!visible) {
+    return null;
   }
 
 
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   const modal = document.querySelector('#modal');
-  //   const closeButton = modal.querySelector('.close-button');
 
-  //   modal.addEventListener('click', (event) => {
-  //     if (event.target === modal || event.target === closeButton) {
-  //       modal.classList.remove('open');
-  //       toggleModal();
-  //     }
-  //   });
 
-  //   // assume there is a button that opens the modal with ID #open-modal
-  //   const openModalButton = document.querySelector('#open-modal');
-  //   openModalButton.addEventListener('click', () => {
-  //     modal.classList.add('open');
-  //     toggleModal();
-  //   });
-
-  // });
   return (
-
-
     <form
       ref={form}
       onSubmit={sendEmail}
-      id="container modal"
-      onClick={handleOnClose}
-      className={`fixed inset-0 bg-white bg-opacity-50 ${isOpen ? '' : 'backdrop-blur-sm'
-        } flex items-center justify-center font-mulish`}
+      id="container"
+      onClick={() => {
+        setIsNavbarOpen(true);
+        handleOnClose();
+      }}
+      className={`fixed inset-0 bg-white z-[100] bg-opacity-50 flex items-center justify-center font-mulish`}
     >
       <div className=" bg-darkBlue md:p-10 p-2 rounded w-5/6 md:w-2/5">
         <h1 className="font-semibold text-center text-xl md:mb-2 my-2  text-darkgreenVariant">

@@ -18,7 +18,7 @@ const Testimonials = () => {
                 </div>
 
             </div>
-            {width <= 768 ? <MobileTestimonial /> : <DesktopTestimonial />}
+            {width <= 766 ? <MobileTestimonial /> : <DesktopTestimonial />}
 
 
         </div>

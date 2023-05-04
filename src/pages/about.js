@@ -229,14 +229,14 @@ const About = () => {
           <div className='flex flex-col md:flex-row gap-4 md:p-6 my-12 md:my-0'>
             <div
               className='basis-1/3 text-justify font-mulish text-darkgreenVariant'
-              onClick={() => handleDisplay(1)}
+              onClick={() => handleDisplay(3)}
             >
               <span className='flex flex-row items-center justify-between'>
-                <span className='font-semibold text-2xl md:text-3xl justify-start items-center'>
-                  <i className='fa-solid fa-eye bg-darkgreenVariant text-darkBlue p-6 rounded mr-6' />
+                <span className='flex font-semibold text-2xl md:text-3xl justify-start items-center'>
+                  <i className='fa-solid fa-heart bg-darkgreenVariant text-darkBlue p-6 rounded mr-6' />
                   Our Vision
                 </span>
-                {isOpen !== 1 && (
+                {isOpen !== 3 && (
                   <span>
                     <i className='flex md:hidden fa-solid fa-chevron-down text-4xl'></i>
                   </span>
@@ -245,7 +245,7 @@ const About = () => {
               {width <= 768 && (
                 <motion.p
                   initial={'hidden'}
-                  animate={isOpen === 1 ? 'visible' : 'hidden'}
+                  animate={isOpen === 3 ? 'visible' : 'hidden'}
                   exit={'hidden'}
                   variants={variants}
                   className='text-md'

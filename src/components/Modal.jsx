@@ -12,8 +12,10 @@ export default function Modal({ visible, onClose }) {
   useEffect(() => {
     if (visible) {
       document.body.style.overflow = 'hidden';
+      setIsNavbarOpen(true);
     } else {
       document.body.style.overflow = 'auto';
+      setIsNavbarOpen(false);
     }
   }, [visible]);
 
@@ -60,7 +62,6 @@ export default function Modal({ visible, onClose }) {
   if (!visible) {
     return null;
   }
-
 
 
 

@@ -362,14 +362,14 @@ const About = () => {
           </p>
         </div>
       </section>
-      <div className=' md:py-20'>
-        <div className='flex flex-col md:flex-row font-mulish'>
+      <div className=' md:py-8 lg:py-12'>
+        <div className='flex flex-col md:flex-col  lg:flex-row font-mulish'>
           <div className='basis-1/2 pt-5 md:pt-10 '>
-            <h1 className='text-lg md:text-3xl font-semibold text-center text-darkBlue'>
+            <h1 className='text-lg md:text-4xl lg:text-3xl font-semibold text-center text-darkBlue md:py- '>
               Light Workers Academy Principles
             </h1>
             <p
-              className='mx-auto max-w-md md:max-w-xl text-md md:text-base text-left text-slate-500 md:text-center
+              className='mx-auto max-w-md md:max-w-xl text-md md:text-lg text-left text-slate-500 md:text-center lg:text-justify
                           md:py-8 py-4 md:mb-1 md:px-10 px-10'
             >
               "To have a stable economy, to have a stable democracy, and to have
@@ -378,7 +378,7 @@ const About = () => {
               entrepreneurship, and more equality." Sebastian Pinera
             </p>
           </div>
-          <div className='basis-1/2 md:px-0 px-6 mb-4 md:mb-0'>
+          <div className='basis-1/2  px-6  mb-4 md:mb-0 md:py-10 md:px-32'>
             <img
               src='https://images.pexels.com/photos/7750766/pexels-photo-7750766.jpeg?auto=compress&cs=tinysrgb&w=600'
               alt=''

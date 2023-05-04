@@ -122,13 +122,13 @@ const Admissions = () => {
           </address>
           <p>{contactConfig.description}</p>
         </div>
-        <div className='lg:col-span-7 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
+        <div class='lg:col-span-7 lg:px-4 lg:mr-16 lg:gap-1 flex items-center mt-3 md:mt-4 px-4 md:px-20'>
           <form
             className='contact__form w-full '
             ref={form}
             onSubmit={sendEmail}
           >
-            <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-x-3'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-x-3 lg:gap-x-3'>
               <motion.div
                 initial='hidden'
                 animate='visible'
@@ -238,7 +238,7 @@ const Admissions = () => {
             <div className='form-group py-6'>
               <div className='form-group flex justify-center'>
                 <button
-                  className='btn bg-darkBlue1 hover:bg-darkGreenVariant py-2 px-6 text-white bg-darkBlue
+                  className='btn bg-darkBlue1 hover:bg-darkGreenVariant py-2 px-6 text-white
                                      text-center rounded-full mb-4 mt-1 justify-center items-center font-semibold font-mulish
                                      text-xl hover:text-darkBlue hover:bg-darkgreenVariant hover:scale-105 transition
                                      duration-300'
